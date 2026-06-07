@@ -9,3 +9,85 @@ html {
 body {
   min-height: 100%;
 }
+
+.main {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBox {
+  background-color: grey;
+  height: 450px;
+  width: 300px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.profileImg {
+  height: 290px;
+  border-radius: 10%;
+}
+.textContainer {
+  width: 300px;
+  display: flex;
+  padding-left: 30px;
+  justify-content: start;
+  align-items: center;
+}
+
+.textContainer h3 {
+  color: white;
+}
+.checklogo {
+  height: 40px;
+}
+
+.bio {
+  width: 300px;
+  padding-left: 30px;
+}
+.bio h5 {
+  color: rgba(252, 251, 251, 0.754);
+}
+
+.mainFollowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followerContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  width: 300px;
+  padding: 30px;
+  color: white;
+}
+
+.mainFollowContainer {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.followerContainer img {
+  height: 15px;
+}
+
+.followButton {
+  height: 35px;
+  width: 110px;
+  background-color: rgb(34, 34, 34);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
