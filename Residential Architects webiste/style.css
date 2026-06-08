@@ -11,19 +11,13 @@ body {
   color: #000000;
   overflow-x: hidden;
 }
-
-/* Base Wrapper Blueprint Layout */
 .hero-wrapper {
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2.5rem 4rem;
-  /* Add your background image path here when ready: */
-  /* background: url('kitchen.jpg') no-repeat center bottom / contain; */
 }
 
-/* Navigation Layout */
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -79,14 +73,10 @@ body {
   font-size: 130px;
   line-height: 110px;
 }
-.HeroContainer img{
+.HeroContainer img {
   padding-top: 170px;
-  /* width:600px; */
-  /* height: 70rem;
-  object-fit:cover;
-  object-position: top center;  */
-  width: 600px;         /* Define your desired width */
-  height: 700px;        /* Define your desired height */
-  object-fit: cover;    /* Cuts off the excess edges evenly */
-  object-position: center
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
 }
