@@ -76,7 +76,7 @@ body {
 .HeroContainer img {
   padding-top: 170px;
   width: 600px;
-  height: 700px;
-  object-fit: cover;
-  object-position: center;
+  height: 500px;
+  object-fit:cover;
+  object-position: top;
 }
