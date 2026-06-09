@@ -20,10 +20,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.navRight{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 .navRight a {
   color: #000000;
@@ -43,24 +43,111 @@ body {
   font-family: "Satoshi";
   font-size: 15px;
   padding-right: 20px;
-  
 }
 
-.reqButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    padding: 0px 16px;
-    border: 1px solid black;
-    border-radius: 4px;
+.reqButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.179);
+  border-radius: 4px;
 }
-.accButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    padding: 0px 16px;
-    border: 1px solid black;
-    border-radius: 4px;
+.accButton {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.accButton a {
+  color: white;
+}
+
+/* --- Hero Content Area Styling --- */
+
+.heroMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px; /* Separates the text from the top navbar */
+  padding: 0 20px;
+}
+
+.typingText {
+  max-width: 800px; /* Increased from 300px so your text expands nicely */
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.typingText h1 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 56px; /* Clean, bold font size matching the reference */
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.description {
+  max-width: 600px; /* Keeps the text paragraph structurally centered and compact */
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.description p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555; /* Softer gray color for the description paragraph */
+}
+
+.heroButton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroButton a {
+  text-decoration: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Start a Free Trial Button (Solid Black Background) */
+.freeTrail {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  padding: 0px 24px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.freeTrail a {
+  color: #ffffff;
+}
+
+/* For Developers Button (Transparent / Outline) */
+.developerButton {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  padding: 0px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.developerButton a {
+  color: #000000;
 }
