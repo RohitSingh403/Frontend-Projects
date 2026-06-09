@@ -91,3 +91,7 @@ footer{
   height: 50vh;
   width: 100vw;
 }
+
+footer h1{
+  font-size: larger;
+}
