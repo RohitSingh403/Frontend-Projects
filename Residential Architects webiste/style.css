@@ -95,3 +95,11 @@ footer{
 footer h1{
   font-size: larger;
 }
+
+
+/* git log --merge : produce the list of commits that are causing the conflict */
+/* git diff :identify the difference between the states repositories or files*/
+/* git checkout :used to undo the changed made to the file, or for changing branches*/
+/* git reset --mixed :used to undo changed to the working directory and staging area*/
+/* git merge --abort : helps in exiting the merge process and returning back to the stage before the merging began*/
+/* git reset :used at the time of merge conflict to reset the conflicted files to their original state*/
