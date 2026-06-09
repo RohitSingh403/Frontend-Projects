@@ -10,3 +10,57 @@ body {
   color: #000000;
   overflow-x: hidden;
 }
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d6d4d4;
+}
+.navMain {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navRight{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navRight a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Satoshi";
+  font-size: 15px;
+  padding-right: 20px;
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navLeft a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Satoshi";
+  font-size: 15px;
+  padding-right: 20px;
+  
+}
+
+.reqButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.accButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
