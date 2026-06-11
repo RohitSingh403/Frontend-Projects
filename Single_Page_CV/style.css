@@ -25,3 +25,19 @@ header h3{
     align-items: center;
     gap: 5px;
 }
+
+
+#career-history{
+    padding-left: 0.8rem;
+}
+
+.expTopic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.8rem;
+    line-height: 1px;
+}
+.description {
+    padding-left: 0.8rem;
+}
