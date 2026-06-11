@@ -54,3 +54,33 @@ header h3 {
   color: #000000;
   text-decoration: none;
 }
+
+
+#skills{
+    padding-left: 0.8rem;
+}
+/* .sectionSkill{
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.8rem;
+  line-height: 1px;
+} */
+
+/* .skill-point{
+    display: flex;
+
+} */
+ .skils_sec{
+    line-height: 1px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+ }
+ .skils_sec h4{
+    font-size: 1.1rem;
+ }
+ .skils_sec h5{
+    font-size: 1rem;
+ }
