@@ -84,3 +84,13 @@ display: flex;
  .skils_sec h5{
     font-size: 1rem;
  }
+
+ #education{
+    padding-left: 0.8rem;
+ }
+.edu_sec{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 10px;
+}
