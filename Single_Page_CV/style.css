@@ -9,35 +9,44 @@ body {
   color: #000000;
   overflow-x: hidden;
 }
-header{
-    line-height: 10px;
+header {
+  line-height: 10px;
 }
-header h1{
-    font-size:  3rem;
-    padding-left: 0.8rem;
+header h1 {
+  font-size: 3rem;
+  padding-left: 0.8rem;
 }
-header h3{
-    padding-left: 0.8rem;
+header h3 {
+  padding-left: 0.8rem;
 }
-.mainContacts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-
-#career-history{
-    padding-left: 0.8rem;
+.mainContacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.expTopic{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 0.8rem;
-    line-height: 1px;
+#career-history {
+  padding-left: 0.8rem;
+}
+
+.expTopic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.8rem;
+  line-height: 1px;
 }
 .description {
-    padding-left: 0.8rem;
+  padding-left: 0.8rem;
+}
+#projects {
+  padding-left: 0.8rem;
+}
+.projTopic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.8rem;
+  line-height: 1px;
 }
