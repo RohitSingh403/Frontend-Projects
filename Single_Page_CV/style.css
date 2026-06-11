@@ -50,3 +50,7 @@ header h3 {
   margin-right: 0.8rem;
   line-height: 1px;
 }
+.projTopic span a{
+  color: #000000;
+  text-decoration: none;
+}
