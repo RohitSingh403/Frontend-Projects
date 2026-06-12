@@ -1,11 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Changelog Components</title>
+  </head>
+  <body>
+    <div class="changelog-container">
+      <header class="changelog-header">
+        <h1>Project ChangeLog Component</h1>
+        <p>Updated and Improvement</p>
+      </header>
+      <div class="changelog-timeline">
+        <article class="changelog-item">
+          <div class="chagelog-meta">
+            <span class="version-tag"></span>
+            <time datetime="">June 12, 2026</time>
+          </div>
+          <div class="changelog-container">
+            <h2>The UI Overhaul</h2>
+            <ul class="changelog-changes">
+              <li class="change-added">
+                <span class="badge">Added</span>
+                <p>Introduced dark mode theme.</p>
+              </li>
+              <li class="change-fixed">
+                <span class="badge"> Fixed</span>
+                <p>Resolved mobile menu overflow bug.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
 </html>
