@@ -73,3 +73,22 @@ body {
     align-items: flex-start;
     gap: 1rem;
 }
+.badge{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.2rem -.5rem;
+    border-radius: 4px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.change-added .badge{
+    background-color:rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.change-fixed .badge{
+    background-color:rgba(234, 179, 8, 0.15);
+    color: #eab308;
+}
