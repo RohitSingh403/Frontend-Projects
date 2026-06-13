@@ -5,7 +5,43 @@
 }
 
 body {
-  background-color: #f8f8f8;
-  color: #000000;
+  /* background-color: #f8f8f8; */
+  /* color: #000000; */
   overflow-x: hidden;
+  
+}
+
+
+.testimonial-container{
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-one{
+    height: 20rem;
+    width: 25rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+.content-container{
+    font-size: 20px;
+}
+
+.user-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profile-img img {
+    border-radius: 100%;
+    object-position: center;
+    object-fit:cover;
+    height: 4.5rem;
+}
+.designation{
+    line-height: 10px;
 }
