@@ -27,14 +27,15 @@ body {
     border-radius: 15px;
     padding: 10px;
 }
-.content-container{
+.content-container {
     font-size: 20px;
 }
 
 .user-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    gap: 20px;
 }
 .profile-img img {
     border-radius: 100%;
