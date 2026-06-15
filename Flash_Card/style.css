@@ -68,3 +68,26 @@ body{
     justify-content: space-between;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+.card-back{
+    transform: rotateY(180deg);
+    background-color: #f9fafb;
+    border: 2px solid#e5e7eb;
+}
+.card-label{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #9ca3af;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+.click-prompt{
+    font-size: 0.8rem;
+    color: #a5b4fc;
+    text-align: center;
+}
