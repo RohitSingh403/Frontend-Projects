@@ -1,29 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Flash Card using JS</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <main class="app-wrapper">
-        <header class="app-header">
-            <h1>Flash Card</h1>
-            <div class="progess-container">
-                <div class="progress-bar-tracker">
-                    <div id="progress-fill" class="progress-bar-fill"></div>
-                </div>
-                <span id="progess-text" class="progess-text">
-                    1 of 3(33%)
-                </span>
-            </div>
-        </header>
-
-
-
-
+      <header class="app-header">
+        <h1>Flash Card</h1>
+        <div class="progess-container">
+          <div class="progress-bar-tracker">
+            <div id="progress-fill" class="progress-bar-fill"></div>
+          </div>
+          <span id="progess-text" class="progess-text"> 1 of 3(33%) </span>
+        </div>
+      </header>
+<!-- --Flip animation 3D-- -->
+      <section class="flashcard-zone">
+        <div id="flashcard" class="card-container">
+          <div class="card-face card-front">
+            <span class="card-label"> Question</span>
+            <p id="question-text" class="card-text">
+                Loading question...
+            </p>
+            <span class="click-prompt"> Click to reveal answer</span>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
