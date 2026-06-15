@@ -91,3 +91,27 @@ body{
     color: #a5b4fc;
     text-align: center;
 }
+
+.navigation-controls{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav-btn{
+    flex: 1;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    padding: 12px 24px;
+    border-radius:8px ;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.nav-btn:hover:no(:disabled){
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+}
+.nav-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
