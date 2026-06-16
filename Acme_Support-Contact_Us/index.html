@@ -44,16 +44,28 @@
             />
           </div>
 
-
           <div class="form-row">
             <label for="subjectTopic">Subject</label>
             <select id="subjectTopic" required>
-                <option value="" disabled selected> Choose a topic</option>
-                <option value="billing"> Billing & Invoices</option>
-                <option value="technical">Technical Error Bug</option>
-                <option value="feedback">General Performance Feedback</option>
+              <option value="" disabled selected>Choose a topic</option>
+              <option value="billing">Billing & Invoices</option>
+              <option value="technical">Technical Error Bug</option>
+              <option value="feedback">General Performance Feedback</option>
             </select>
           </div>
+
+          <div class="form-row">
+            <label for="userMessage">Message</label>
+            <textarea
+              id="userMessage"
+              rows="6"
+              required
+              placeholder="Type your message details here..."
+            ></textarea>
+          </div>
+
+
+          
         </form>
       </main>
     </div>
