@@ -42,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.reset();
     });
 });
+// Complete js logic
