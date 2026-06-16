@@ -3,7 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+body{
+    color: #1a1a1a;
+    border-color: #ffffff;
+    line-height: 1.5;
+}
+
+.page-wrapper{
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.brand-logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.navigation-menu{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
 }
