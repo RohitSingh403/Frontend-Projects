@@ -48,3 +48,24 @@ body {
 .close-x-btn:hover{
     color: #ffffff;
 }
+.cookie-icon-wrapper{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.cookie-svg{
+    width: 32px;
+    height: 32px;
+}
+.cookie-message{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-right: 10px;
+}
