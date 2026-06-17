@@ -85,3 +85,21 @@ body {
 .accept-btn:hover {
     background-color: #e5e5e5;
 }
+
+/* - MOCK PAGE WIREFRAME STYLES- */
+/* ----------------------------- */
+
+.mock-page {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    opacity: 0.15; /* Dull background page out to highlight the popup card */
+    pointer-events: none;
+}
+.mock-header { display: flex; justify-content: space-between; margin-bottom: 40px; }
+.mock-logo { width: 40px; height: 40px; background-color: #000; border-radius: 8px; }
+.mock-nav { display: flex; gap: 15px; }
+.mock-nav span { width: 35px; height: 12px; background-color: #000; border-radius: 4px; }
+.mock-hero { height: 180px; background-color: #000; border-radius: 12px; margin-bottom: 40px; }
+.line { height: 12px; background-color: #000; border-radius: 4px; margin-bottom: 12px; }
+.line.short { width: 40%; } .line.long { width: 85%; } .line.medium { width: 60%; }
