@@ -17,4 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
             cookieBanner.classList.remove('hidden');
         }
     }
+
+
+
+
+    // 3. Write actions handling confirmation clicks
+    acceptCookiesBtn.addEventListener('click', () => {
+        // Set verification pair key directly inside local storage space parameters
+        localStorage.setItem('cookieConsentGranted', 'true');
+        
+        // Append the animation class back to drop visual components cleanly
+        cookieBanner.classList.add('hidden');
+    });
 });
