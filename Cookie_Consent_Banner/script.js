@@ -35,4 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide the banner without setting the local storage flag
         cookieBanner.classList.add('hidden');
     });
+
+
+
+
+    // 5. Execute initial application check sequence loops
+    checkCookieConsent();
+
 });
