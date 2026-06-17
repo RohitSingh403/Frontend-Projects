@@ -29,4 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Append the animation class back to drop visual components cleanly
         cookieBanner.classList.add('hidden');
     });
+
+     // 4. Handle edge case close cancel button interaction
+    closeBannerBtn.addEventListener('click', () => {
+        // Hide the banner without setting the local storage flag
+        cookieBanner.classList.add('hidden');
+    });
 });
