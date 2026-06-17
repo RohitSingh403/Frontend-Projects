@@ -29,3 +29,22 @@ body {
     opacity 0.4s ease,
     transform 0.4s ease;
 }
+.cookie-banner.hidden{
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+.close-x-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #888888;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.close-x-btn:hover{
+    color: #ffffff;
+}
