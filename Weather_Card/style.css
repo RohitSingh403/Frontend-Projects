@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,9 +25,10 @@ body {
   width: 350px;
   text-align: center;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-
 
 /* Animation on Hover */
 .weather-card:hover {
@@ -48,8 +49,6 @@ body {
   margin-top: 0.2rem;
 }
 
-
-
 /* Main Display Section */
 .main-weather {
   margin: 2rem 0;
@@ -61,10 +60,14 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 .temperature-container {
@@ -90,9 +93,6 @@ body {
   margin-top: 0.5rem;
   text-transform: capitalize;
 }
-
-
-
 
 /* Footer Section */
 .weather-details {
