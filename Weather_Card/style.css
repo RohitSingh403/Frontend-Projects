@@ -94,3 +94,37 @@ body {
 
 
 
+/* Footer Section with Details (Flexbox used here) */
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+}
+
+.detail-info {
+  text-align: left;
+}
+
+.detail-value {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #cfd8dc;
+}
