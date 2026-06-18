@@ -62,3 +62,35 @@ body {
 }
 
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.temperature-container {
+  margin-top: 0.5rem;
+  display: inline-flex;
+}
+
+.temp-number {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.temp-unit {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.weather-condition {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+
+
+
