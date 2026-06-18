@@ -50,3 +50,15 @@ body {
 
 
 
+/* Main Display Section */
+.main-weather {
+  margin: 2rem 0;
+}
+
+.weather-icon {
+  font-size: 4.5rem;
+  /* Simple scaling animation to make it look alive */
+  animation: float 3s ease-in-out infinite;
+}
+
+
