@@ -138,3 +138,35 @@ body {
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
+
+
+
+
+/* Footer layout inside card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+/* Add To Cart Button Style */
+.add-btn {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #2b6cb0;
+}
