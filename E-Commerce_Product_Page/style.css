@@ -76,3 +76,22 @@ body {
 
 
 
+/* Image Wrapper and Custom Backgrounds */
+.image-wrapper {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align model photos to the bottom */
+  overflow: hidden;
+}
+
+/* Specific colors matching the image */
+.bg-green { background-color: #8fa89b; }
+.bg-pink { background-color: #e5c3c6; }
+.bg-blue { background-color: #79a3c1; }
+
+.image-wrapper img {
+  height: 95%;
+  width: auto;
+  object-fit: contain;
+}
