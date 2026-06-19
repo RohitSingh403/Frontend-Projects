@@ -95,3 +95,46 @@ body {
   width: auto;
   object-fit: contain;
 }
+
+
+
+
+
+
+
+
+/* Card Content Area */
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Color Dots Indicator */
+.color-dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.purple { background-color: #cf8bf3; }
+.dot.pink { background-color: #f1b3b3; }
+.dot.orange { background-color: #f3b07c; }
+
+/* Typography */
+.product-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
