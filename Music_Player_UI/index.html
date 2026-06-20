@@ -1,113 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Music Player UI</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Container -->
-  <div class="dashboard-container">
-    
-    <!-- Left Section: Currently Playing Card -->
-    <aside class="player-card">
-      <div class="album-art-wrapper">
-        <img src="https://unsplash.com" alt="City Lights">
-      </div>
-      
-      <div class="track-info">
-        <h2 class="track-title">City Lights In Your Eyes</h2>
-        <p class="track-artist">Gardenia</p>
-      </div>
+    <div class="dashboard-container">
+      <!-- Left Section: Currently Playing Card -->
+      <aside class="player-card">
+        <div class="album-art-wrapper">
+          <img src="https://unsplash.com" alt="City Lights" />
+        </div>
 
+        <div class="track-info">
+          <h2 class="track-title">City Lights In Your Eyes</h2>
+          <p class="track-artist">Gardenia</p>
+        </div>
 
+        <!-- Custom Range Progress Bar -->
+        <div class="progress-container">
+          <span class="time">02:10</span>
+          <input
+            type="range"
+            class="progress-slider"
+            min="0"
+            max="100"
+            value="65"
+          />
+          <span class="time">03:45</span>
+        </div>
 
-      <!-- Custom Range Progress Bar -->
-      <div class="progress-container">
-        <span class="time">02:10</span>
-        <input type="range" class="progress-slider" min="0" max="100" value="65">
-        <span class="time">03:45</span>
-      </div>
-
-
-
-
-      <!-- Playback Control Buttons -->
-      <div class="controls">
-        <button class="icon-btn btn-small">🔁</button>
-        <button class="icon-btn">⏮️</button>
-        <button class="icon-btn play-btn">▶️</button>
-        <button class="icon-btn">⏭️</button>
-        <button class="icon-btn btn-small">🔊</button>
-      </div>
-    </aside>
-
-
+        <!-- Playback Control Buttons -->
+        <div class="controls">
+          <button class="icon-btn btn-small">🔁</button>
+          <button class="icon-btn">⏮️</button>
+          <button class="icon-btn play-btn">▶️</button>
+          <button class="icon-btn">⏭️</button>
+          <button class="icon-btn btn-small">🔊</button>
+        </div>
+      </aside>
 
       <!-- Right Section: Dashboard Content -->
-    <main class="main-content">
-      
-      <!-- Top Header / Navbar -->
-      <header class="navbar">
-        <div class="logo">VOCATONE</div>
-        <div class="nav-icons">
-          <span class="nav-item">EN</span>
-          <button class="nav-btn">🔍</button>
-          <button class="nav-btn">👤</button>
-          <button class="nav-btn">☰</button>
-        </div>
-      </header>
-  <!-- Hero Banner Section -->
-      <section class="hero-section">
-        <div class="hero-text">
-          <h1 class="hero-title">Play Your<br>Beloved Music</h1>
-          <p class="hero-subtitle">Selected music from various genres, artists and composers. Play now, completely free and convenient.</p>
-        </div>
-        <button class="giant-play-btn">▶️</button>
-      </section>
-
-
-
-
-       <!-- Bottom Playlists Section -->
-      <section class="playlists-section">
-        <h3 class="section-title">Choose Playlist</h3>
-        <div class="playlist-grid">
-          
-          <!-- Playlist Item 1 -->
-          <div class="playlist-card">
-            <div class="playlist-img-box">
-              <img src="https://unsplash.com" alt="Weekly Top 50">
-            </div>
-            <p class="playlist-name">Weekly Top 50</p>
+      <main class="main-content">
+        <!-- Top Header / Navbar -->
+        <header class="navbar">
+          <div class="logo">VOCATONE</div>
+          <div class="nav-icons">
+            <span class="nav-item">EN</span>
+            <button class="nav-btn">🔍</button>
+            <button class="nav-btn">👤</button>
+            <button class="nav-btn">☰</button>
           </div>
-
-
-
-
-          <!-- Playlist Item 2 -->
-          <div class="playlist-card">
-            <div class="playlist-img-box">
-              <img src="https://unsplash.com" alt="Serenity Vibes">
-            </div>
-            <p class="playlist-name">Serenity Vibes</p>
+        </header>
+        <!-- Hero Banner Section -->
+        <section class="hero-section">
+          <div class="hero-text">
+            <h1 class="hero-title">Play Your<br />Beloved Music</h1>
+            <p class="hero-subtitle">
+              Selected music from various genres, artists and composers. Play
+              now, completely free and convenient.
+            </p>
           </div>
+          <button class="giant-play-btn">▶️</button>
+        </section>
 
-          <!-- Playlist Item 3 -->
-          <div class="playlist-card">
-            <div class="playlist-img-box">
-              <img src="https://unsplash.com" alt="Lazy Songs">
+        <!-- Bottom Playlists Section -->
+        <section class="playlists-section">
+          <h3 class="section-title">Choose Playlist</h3>
+          <div class="playlist-grid">
+            <!-- Playlist Item 1 -->
+            <div class="playlist-card">
+              <div class="playlist-img-box">
+                <img src="https://unsplash.com" alt="Weekly Top 50" />
+              </div>
+              <p class="playlist-name">Weekly Top 50</p>
             </div>
-            <p class="playlist-name">Lazy Songs</p>
+
+            <!-- Playlist Item 2 -->
+            <div class="playlist-card">
+              <div class="playlist-img-box">
+                <img src="https://unsplash.com" alt="Serenity Vibes" />
+              </div>
+              <p class="playlist-name">Serenity Vibes</p>
+            </div>
+
+            <!-- Playlist Item 3 -->
+            <div class="playlist-card">
+              <div class="playlist-img-box">
+                <img src="https://unsplash.com" alt="Lazy Songs" />
+              </div>
+              <p class="playlist-name">Lazy Songs</p>
+            </div>
           </div>
-
-        </div>
-      </section>
-
-    </main>
-
-  </div>
-
-</body>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
