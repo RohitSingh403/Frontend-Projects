@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #555555;
+  line-height: 1.8;
+  background-color: #ffffff;
+}
+
+/* ==========================================
+   THE PARALLAX EFFECT BACKGROUNDS
+   ========================================== */
+.parallax-bg {
+  position: relative;
+  /* Yeh properties images ko full width aur height deti hain */
+  height: 100vh; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* ✨ MAGIC LINE: Yeh background image ko scroll hone se rokti hai */
+  background-attachment: fixed; 
+
+  /* Centering the caption text inside image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adding Beautiful High-Quality Unsplash Images */
+.bg-image1 {
+  background-image: url('https://unsplash.com');
+}
+
+.bg-image2 {
+  background-image: url('https://unsplash.com');
+}
+
+.bg-image3 {
+  background-image: url('https://unsplash.com');
+}
+
+/* Caption Boxes Styling */
+.caption {
+  text-align: center;
+}
