@@ -41,3 +41,46 @@ body {
 }
 
 
+/* Image Element Layout Formats */
+#img-div {
+  background-color: #f5f5f7;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 0.9rem;
+  color: #86868b;
+  margin-top: 0.8rem;
+}
+
+/* Information Container Core Elements */
+#tribute-info {
+  margin-top: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  color: #424245;
+  margin-bottom: 1.8rem;
+}
+
+
+
+
+
