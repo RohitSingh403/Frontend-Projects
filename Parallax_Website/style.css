@@ -52,3 +52,48 @@ body, html {
 .caption {
   text-align: center;
 }
+
+
+
+
+
+.border {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.border.bg-dark {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* ==========================================
+   TEXT CONTENT SECTIONS STYLE
+   ========================================== */
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  text-align: justify; /* Text ko clean block layout deta hai */
+}
