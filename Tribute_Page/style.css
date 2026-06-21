@@ -134,3 +134,26 @@ body {
 
 
 
+
+
+/* Footer Navigation Target Item Colors */
+.tribute-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d2d2d7;
+  font-size: 1rem;
+}
+
+#tribute-link {
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+
+
