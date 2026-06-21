@@ -122,3 +122,26 @@ body, html {
 .content-section.dark-theme p {
   color: #b2bec3;
 }
+
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE DESIGN (For Mobile Phones)
+   ========================================== */
+@media (max-width: 768px) {
+  .parallax-bg {
+    /* Mobile browsers par 'fixed' attachment crash ya lag karti hai, 
+       isliye mobile par ise normal scroll kar dete hain */
+    background-attachment: scroll; 
+    height: 60vh;
+  }
+  
+  .border {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 4px;
+  }
+}
