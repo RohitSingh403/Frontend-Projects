@@ -97,3 +97,28 @@ body, html {
   color: #666666;
   text-align: justify; /* Text ko clean block layout deta hai */
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Optional Dark Theme Section for Contrast Variation */
+.content-section.dark-theme {
+  max-width: 100%; /* Spans full window width */
+  background-color: #1f242d;
+  padding: 5rem 15%;
+}
+
+.content-section.dark-theme .section-title {
+  color: #ffffff;
+}
+
+.content-section.dark-theme p {
+  color: #b2bec3;
+}
