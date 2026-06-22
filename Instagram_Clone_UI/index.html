@@ -1,146 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Instagram Clone</title>
-</head>
-<body>
-     <!-- App Wrapper Layout Container -->
-  <div class="app-container">
+  </head>
+  <body>
+    <!-- App Wrapper Layout Container -->
+    <div class="app-container">
+      <!-- 1. LEFT SIDEBAR NAVIGATION -->
+      <aside class="sidebar-nav">
+        <div class="logo">Instagram</div>
+        <nav class="nav-links">
+          <a href="#" class="nav-item active"
+            ><span class="icon">🏠</span> Home</a
+          >
+          <a href="#" class="nav-item"><span class="icon">🔍</span> Search</a>
+          <a href="#" class="nav-item"><span class="icon">🧭</span> Explore</a>
+          <a href="#" class="nav-item"><span class="icon">🎬</span> Reels</a>
+          <a href="#" class="nav-item"><span class="icon">✉️</span> Messages</a>
+          <a href="#" class="nav-item"
+            ><span class="icon">❤️</span> Notifications</a
+          >
+          <a href="#" class="nav-item"><span class="icon">➕</span> Create</a>
+          <a href="#" class="nav-item"><span class="icon">👤</span> Profile</a>
+        </nav>
+      </aside>
 
-    <!-- 1. LEFT SIDEBAR NAVIGATION -->
-    <aside class="sidebar-nav">
-      <div class="logo">Instagram</div>
-      <nav class="nav-links">
-        <a href="#" class="nav-item active"><span class="icon">🏠</span> Home</a>
-        <a href="#" class="nav-item"><span class="icon">🔍</span> Search</a>
-        <a href="#" class="nav-item"><span class="icon">🧭</span> Explore</a>
-        <a href="#" class="nav-item"><span class="icon">🎬</span> Reels</a>
-        <a href="#" class="nav-item"><span class="icon">✉️</span> Messages</a>
-        <a href="#" class="nav-item"><span class="icon">❤️</span> Notifications</a>
-        <a href="#" class="nav-item"><span class="icon">➕</span> Create</a>
-        <a href="#" class="nav-item"><span class="icon">👤</span> Profile</a>
-      </nav>
-    </aside>
-
-
-
-
- <!-- 2. MAIN FEED AND STORIES AREA -->
-    <main class="feed-container">
-      
-      <!-- Stories Bar -->
-      <section class="stories-bar">
-        <div class="story-item">
-          <div class="story-ring"><img src="https://unsplash.com" alt="User"></div>
-          <span class="story-username">rohit_singh</span>
-        </div>
-        <div class="story-item">
-          <div class="story-ring"><img src="https://unsplash.com" alt="User"></div>
-          <span class="story-username">kirat_cohort</span>
-        </div>
-        <div class="story-item">
-          <div class="story-ring"><img src="https://unsplash.com" alt="User"></div>
-          <span class="story-username">sara_dev</span>
-        </div>
-        <div class="story-item">
-          <div class="story-ring"><img src="https://unsplash.com" alt="User"></div>
-          <span class="story-username">alex_coding</span>
-        </div>
-      </section>
-
-
-
-
-
-       <!-- Post 1 Card -->
-      <article class="post-card">
-        <!-- Post Header -->
-        <header class="post-header">
-          <div class="post-user-info">
-            <img src="https://unsplash.com" class="user-avatar" alt="User Avatar">
-            <span class="post-username">kirat_cohort</span>
-            <span class="post-time">• 2h</span>
-          </div>
-          <button class="options-btn">•••</button>
-        </header>
-
-        <!-- Post Image Body -->
-        <div class="post-image">
-          <img src="https://unsplash.com" alt="Post Feed Photo">
-        </div>
-
-        <!-- Post Engagement Footer -->
-        <footer class="post-footer">
-          <div class="action-buttons">
-            <div class="left-actions">
-              <button class="action-icon">❤️</button>
-              <button class="action-icon">💬</button>
-              <button class="action-icon">✈️</button>
+      <!-- 2. MAIN FEED AND STORIES AREA -->
+      <main class="feed-container">
+        <!-- Stories Bar -->
+        <section class="stories-bar">
+          <div class="story-item">
+            <div class="story-ring">
+              <img src="/Instagram_Clone_UI/images/bernhard-uTd-kylh7bE-unsplash.jpg" alt="User" />
             </div>
-            <button class="action-icon">🔖</button>
+            <span class="story-username">rohit_singh</span>
           </div>
-          
-          <div class="post-likes">1,240 likes</div>
-          
-          <div class="post-caption">
-            <span class="caption-username">kirat_cohort</span> Building amazing full-stack systems! Don't miss out the next class. #coding #webdev
+          <div class="story-item">
+            <div class="story-ring">
+              <img src="/Instagram_Clone_UI/images/febe-vanermen-7uV5cPbemcY-unsplash.jpg" alt="User" />
+            </div>
+            <span class="story-username">kirat_cohort</span>
           </div>
-          
-          <button class="view-comments-btn">View all 45 comments</button>
-        </footer>
-      </article>
+          <div class="story-item">
+            <div class="story-ring">
+              <img src="/Instagram_Clone_UI/images/florian-schmid-f1PzRPbqt0M-unsplash.jpg" alt="User" />
+            </div>
+            <span class="story-username">sara_dev</span>
+          </div>
+          <div class="story-item">
+            <div class="story-ring">
+              <img src="/Instagram_Clone_UI/images/jasper-gribble-TTExgxV06KA-unsplash.jpg" alt="User" />
+            </div>
+            <span class="story-username">alex_coding</span>
+          </div>
+        </section>
 
+        <!-- Post 1 Card -->
+        <article class="post-card">
+          <!-- Post Header -->
+          <header class="post-header">
+            <div class="post-user-info">
+              <img
+                src="/Instagram_Clone_UI/images/loa-kon-Ve0HGMx7OYo-unsplash.jpg"
+                class="user-avatar"
+                alt="User Avatar"
+              />
+              <span class="post-username">kirat_cohort</span>
+              <span class="post-time">• 2h</span>
+            </div>
+            <button class="options-btn">•••</button>
+          </header>
 
+          <!-- Post Image Body -->
+          <div class="post-image">
+            <img src="/Instagram_Clone_UI/images/pawel-czerwinski-Wuu6H3mI7UA-unsplash.jpg" alt="Post Feed Photo" />
+          </div>
 
+          <!-- Post Engagement Footer -->
+          <footer class="post-footer">
+            <div class="action-buttons">
+              <div class="left-actions">
+                <button class="action-icon">❤️</button>
+                <button class="action-icon">💬</button>
+                <button class="action-icon">✈️</button>
+              </div>
+              <button class="action-icon">🔖</button>
+            </div>
 
+            <div class="post-likes">1,240 likes</div>
 
-       </main>
+            <div class="post-caption">
+              <span class="caption-username">kirat_cohort</span> Building
+              amazing full-stack systems! Don't miss out the next class. #coding
+              #webdev
+            </div>
 
-    <!-- 3. RIGHT SIDEBAR SUGGESTIONS PANEL -->
-    <aside class="suggestions-container">
-      
-      <!-- Current User Profile Row -->
-      <div class="current-user-row">
-        <img src="https://unsplash.com" class="user-avatar-large" alt="My Avatar">
-        <div class="user-meta">
-          <span class="username-bold">rohit_singh</span>
-          <span class="fullname-gray">Rohit Singh</span>
-        </div>
-        <button class="switch-btn">Switch</button>
-      </div>
+            <button class="view-comments-btn">View all 45 comments</button>
+          </footer>
+        </article>
+      </main>
 
-      <!-- Suggestions Header Title -->
-      <div class="suggestions-header">
-        <span>Suggested for you</span>
-        <button class="see-all-btn">See All</button>
-      </div>
-
-      <!-- Suggestion Rows Grid -->
-      <div class="suggestions-list">
-        <div class="suggestion-row">
-          <img src="https://unsplash.com" class="user-avatar" alt="Avatar">
+      <!-- 3. RIGHT SIDEBAR SUGGESTIONS PANEL -->
+      <aside class="suggestions-container">
+        <!-- Current User Profile Row -->
+        <div class="current-user-row">
+          <img
+            src="/Instagram_Clone_UI/images/bernhard-uTd-kylh7bE-unsplash.jpg"
+            class="user-avatar-large"
+            alt="My Avatar"
+          />
           <div class="user-meta">
-            <span class="username-small">priya_ui</span>
-            <span class="followed-by-label">Followed by sara_dev + 2 more</span>
+            <span class="username-bold">rohit_singh</span>
+            <span class="fullname-gray">Rohit Singh</span>
           </div>
-          <button class="follow-btn">Follow</button>
+          <button class="switch-btn">Switch</button>
         </div>
-        
-        <div class="suggestion-row">
-          <img src="https://unsplash.com" class="user-avatar" alt="Avatar">
-          <div class="user-meta">
-            <span class="username-small">aman_codes</span>
-            <span class="followed-by-label">New to Instagram</span>
+
+        <!-- Suggestions Header Title -->
+        <div class="suggestions-header">
+          <span>Suggested for you</span>
+          <button class="see-all-btn">See All</button>
+        </div>
+
+        <!-- Suggestion Rows Grid -->
+        <div class="suggestions-list">
+          <div class="suggestion-row">
+            <img src="/Instagram_Clone_UI/images/florian-schmid-f1PzRPbqt0M-unsplash.jpg" class="user-avatar" alt="Avatar" />
+            <div class="user-meta">
+              <span class="username-small">priya_ui</span>
+              <span class="followed-by-label"
+                >Followed by sara_dev + 2 more</span
+              >
+            </div>
+            <button class="follow-btn">Follow</button>
           </div>
-          <button class="follow-btn">Follow</button>
+
+          <div class="suggestion-row">
+            <img src="/Instagram_Clone_UI/images/loa-kon-Ve0HGMx7OYo-unsplash.jpg" class="user-avatar" alt="Avatar" />
+            <div class="user-meta">
+              <span class="username-small">aman_codes</span>
+              <span class="followed-by-label">New to Instagram</span>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
         </div>
-      </div>
-
-    </aside>
-
-  </div>
-</body>
+      </aside>
+    </div>
+  </body>
 </html>
