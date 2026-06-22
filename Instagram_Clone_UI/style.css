@@ -243,3 +243,90 @@ body {
   cursor: pointer;
   padding: 0;
 }
+
+
+
+
+
+
+/* ==========================================
+   3. RIGHT SIDEBAR SUGGESTIONS PANEL
+   ========================================== */
+.suggestions-container {
+  width: 320px;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.current-user-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar-large {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.username-bold {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.fullname-gray, .followed-by-label {
+  font-size: 0.8rem;
+  color: #a8a8a8;
+}
+
+.switch-btn, .follow-btn, .see-all-btn {
+  background: none;
+  border: none;
+  color: #0095f6; /* Blue call-to-action button links */
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a8a8a8;
+  margin-top: 0.5rem;
+}
+
+.see-all-btn {
+  color: #f5f5f5;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.suggestion-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.username-small {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+
+
