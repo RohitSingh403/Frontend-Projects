@@ -330,3 +330,29 @@ body {
 
 
 
+/* ==========================================
+   RESPONSIVE LAYOUT FOR MEDIUM MOBILE DEVICES
+   ========================================== */
+@media (max-width: 950px) {
+  .suggestions-container {
+    display: none; /* Auto-hide right suggestions row on tablet screens */
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar-nav {
+    width: 70px;
+    padding: 2rem 0.5rem;
+  }
+  .logo {
+    display: none; /* Hide wide wording logos on phone screen factors */
+  }
+  .nav-item {
+    font-size: 0; /* Clear texts labels, keep icon flags centered */
+    justify-content: center;
+  }
+  .feed-container {
+    margin-left: 70px;
+    padding: 1rem;
+  }
+}
