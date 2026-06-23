@@ -3,3 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --primary-gold: #c5a880; /* Elegant Restaurant Gold Accent */
+  --dark-bg: #11141a;       /* Clean Premium Dark Layout Surface */
+  --light-bg: #faf8f5;      /* Off-white background for crisp text contrast */
+  --text-dark: #2d3138;
+}
+
+html {
+  scroll-behavior: smooth; /* Enables elegant page slide behavior when clicking anchors */
+}
+
+body {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--text-dark);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+}
+
+/* ==========================================
+   1. STICKY HEADER NAVBAR
+   ========================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(17, 20, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.logo {
+  color: var(--primary-gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-gold);
+}
+
+
+
+
+
+
