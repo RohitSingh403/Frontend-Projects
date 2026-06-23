@@ -64,3 +64,54 @@ body {
 
 
 
+/* ==========================================
+   2. HERO LANDING COMPONENT
+   ========================================== */
+.hero-section {
+  height: 100vh;
+  background-image: url('https://unsplash.com');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55); /* Smooth overlay darken mask layer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: #e2e8f0;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--primary-gold);
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #b0936b;
+}
+
+
+
+
