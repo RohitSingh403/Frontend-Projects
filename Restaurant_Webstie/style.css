@@ -252,3 +252,30 @@ body {
 
 
 
+/* ==========================================
+   6. POWERFUL MEDIA QUERY RESPONSIVENESS
+   ========================================== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+  
+  .nav-links {
+    display: none; /* Auto-hides loose textual navigation strings links factor factors on tiny views */
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr; /* Compresses item arrays into neat vertical cards blocks */
+  }
+
+  .menu-card {
+    flex-direction: column; /* Stack image over text inside cards */
+  }
+
+  .menu-card img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
