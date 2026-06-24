@@ -1,16 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
 :root {
-  --theme-dark: #0f172a;    /* Deep space slate base theme */
-  --theme-cyan: #0ea5e9;    /* Electric brand cyan link colors */
-  --theme-accent: #6366f1;  /* High-energy tech indigo */
-  --neutral-gray: #f8fafc;  /* Warm tint gray section separation layout */
+  --theme-dark: #0f172a; /* Deep space slate base theme */
+  --theme-cyan: #0ea5e9; /* Electric brand cyan link colors */
+  --theme-accent: #6366f1; /* High-energy tech indigo */
+  --neutral-gray: #f8fafc; /* Warm tint gray section separation layout */
   --text-primary: #1e293b;
   --text-muted: #64748b;
 }
@@ -20,7 +18,11 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
   color: var(--text-primary);
   line-height: 1.6;
   background-color: #ffffff;
@@ -106,7 +108,7 @@ body {
    ========================================== */
 .hero-banner {
   height: 85vh;
-  background-image: url('https://unsplash.com');
+  background-image: url("https://unsplash.com");
   background-size: cover;
   background-position: center;
   margin-top: 60px; /* Accounts for fixed top navbar */
@@ -115,7 +117,11 @@ body {
 .hero-overlay {
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(99, 102, 241, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(99, 102, 241, 0.4)
+  );
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -163,10 +169,6 @@ body {
   transform: translateY(-2px);
 }
 
-
-
-
-
 /* ==========================================
    3. PURPOSE & AUDIENCE CARDS GRID
    ========================================== */
@@ -185,7 +187,7 @@ body {
   padding: 2.5rem;
   border-radius: 12px;
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
 }
 
 .card-icon {
@@ -229,7 +231,7 @@ body {
   overflow: hidden;
   margin: 0 auto 1.5rem;
   border: 4px solid #ffffff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
 .speaker-image img {
@@ -248,12 +250,6 @@ body {
   color: var(--text-muted);
   font-weight: 500;
 }
-
-
-
-
-
-
 
 /* ==========================================
    5. SCHEDULE TIMELINE COMPONENT
@@ -310,7 +306,7 @@ body {
   background-color: #ffffff;
   padding: 3rem;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .venue-info-text {
@@ -347,9 +343,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-
-
 
 /* ==========================================
    7. REGISTER ACTION BUTTON BLOCK
@@ -422,7 +415,9 @@ body {
   .hero-text-content h1 {
     font-size: 2.4rem;
   }
-  .audience-grid, .speakers-grid, .venue-layout-box {
+  .audience-grid,
+  .speakers-grid,
+  .venue-layout-box {
     flex-direction: column; /* Collapses flat horizontal elements into single-column lists */
     gap: 2rem;
   }
@@ -430,6 +425,3 @@ body {
     width: 100%;
   }
 }
-
-
-
