@@ -351,3 +351,85 @@ body {
 
 
 
+/* ==========================================
+   7. REGISTER ACTION BUTTON BLOCK
+   ========================================== */
+.register-action-block {
+  background: linear-gradient(135deg, var(--theme-dark), #1e1b4b);
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.register-action-block h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.register-action-block p {
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.action-submit-btn {
+  background-color: var(--theme-cyan);
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+  transition: background-color 0.2s;
+}
+
+.action-submit-btn:hover {
+  background-color: #0284c7;
+}
+
+/* ==========================================
+   8. FOOTER BLOCK METADATA
+   ========================================== */
+.event-footer {
+  background-color: var(--theme-dark);
+  color: #94a3b8;
+  padding: 2.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* ==========================================
+   9. DEVICE BREAKPOINT BREAK DOWNS
+   ========================================== */
+@media (max-width: 850px) {
+  .nav-menu {
+    display: none; /* Hide floating text links components arrays on mobile viewpoints */
+  }
+  .hero-text-content h1 {
+    font-size: 2.4rem;
+  }
+  .audience-grid, .speakers-grid, .venue-layout-box {
+    flex-direction: column; /* Collapses flat horizontal elements into single-column lists */
+    gap: 2rem;
+  }
+  .venue-image-box {
+    width: 100%;
+  }
+}
+
+
+
