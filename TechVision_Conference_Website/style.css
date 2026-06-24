@@ -255,3 +255,99 @@ body {
 
 
 
+/* ==========================================
+   5. SCHEDULE TIMELINE COMPONENT
+   ========================================== */
+.schedule-section {
+  background-color: #ffffff;
+}
+
+.timeline-container {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-row {
+  display: flex;
+  border-left: 3px solid var(--theme-accent);
+  background-color: var(--neutral-gray);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.timeline-time {
+  width: 120px;
+  font-weight: 700;
+  color: var(--theme-accent);
+  font-size: 1.1rem;
+}
+
+.timeline-details h4 {
+  font-size: 1.1rem;
+  color: var(--theme-dark);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-details p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   6. VENUE DETAILS SECTION
+   ========================================== */
+.venue-section {
+  background-color: var(--neutral-gray);
+}
+
+.venue-layout-box {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.venue-info-text {
+  flex: 1;
+}
+
+.venue-info-text h3 {
+  font-size: 1.6rem;
+  color: var(--theme-dark);
+  margin-bottom: 0.4rem;
+}
+
+.venue-info-text p {
+  color: var(--theme-accent);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.venue-desc {
+  font-weight: 400 !important;
+  color: var(--text-muted) !important;
+  line-height: 1.6;
+}
+
+.venue-image-box {
+  flex: 1;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.venue-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
