@@ -72,3 +72,76 @@ body {
 }
 
 
+/* ========================================== */
+/* RIGHT STREAM MAIN DISPLAY WORKSPACE        */
+/* ========================================== */
+.content-stream {
+    margin-left: 300px; /* Matches Sidebar layout thickness width */
+    flex: 1;
+    padding: 40px 60px;
+    max-width: 1000px;
+}
+
+.main-section {
+    margin-bottom: 50px;
+    scroll-margin-top: 40px; /* Prevents text crowding header elements */
+}
+
+.main-section header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.05rem;
+    color: #374151;
+    margin-bottom: 16px;
+}
+
+/* Nested Document Unordered List Structures */
+.main-section ul {
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.main-section li {
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+/* High Contrast Technical Code Box Formatting */
+.code-wrapper {
+    background-color: #f3f4f6;
+    border-left: 4px solid #9ca3af;
+    padding: 16px 20px;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    color: #111827;
+    overflow-x: auto;
+    margin: 20px 0;
+    white-space: pre-wrap;
+}
+
+code {
+    background-color: #f3f4f6;
+    padding: 2px 6px;
+    font-family: monospace;
+    border-radius: 4px;
+    color: #db2777; /* Highlights inline tags separately */
+}
+
+.code-wrapper code {
+    color: inherit;
+    padding: 0;
+    background: none;
+}
+
+/* Responsive Overrides for Smaller Mobile Dimensions */
+@media (max-width: 768px) {
+    .doc-container { flex-direction: column; }
+    .sidebar { position: relative; width: 100%; height: auto; max-height: 250px; }
+    .content-stream { margin-left: 0; padding: 30px 20px; }
+}
