@@ -1,108 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JS Docmentation Portal</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Grid Workspace Framework -->
     <div class="doc-container">
-        
-        <!-- Left Sticky Navigation Menu Sidebar -->
-        <nav id="navbar" class="sidebar">
-            <header class="nav-title">JS Documentation</header>
-            <div class="nav-links">
-                <a href="#introduction" class="nav-link active">Introduction</a>
-                <a href="#whats_already_known" class="nav-link">What you should know</a>
-                <a href="#javascript_and_java" class="nav-link">JavaScript and Java</a>
-                <a href="#hello_world" class="nav-link">Hello World</a>
-                <a href="#variables" class="nav-link">Variables</a>
-                <a href="#declaring_variables" class="nav-link">Declaring variables</a>
+      <!-- Left Sticky Navigation Menu Sidebar -->
+      <nav id="navbar" class="sidebar">
+        <header class="nav-title">JS Documentation</header>
+        <div class="nav-links">
+          <a href="#introduction" class="nav-link active">Introduction</a>
+          <a href="#whats_already_known" class="nav-link"
+            >What you should know</a
+          >
+          <a href="#javascript_and_java" class="nav-link"
+            >JavaScript and Java</a
+          >
+          <a href="#hello_world" class="nav-link">Hello World</a>
+          <a href="#variables" class="nav-link">Variables</a>
+          <a href="#declaring_variables" class="nav-link"
+            >Declaring variables</a
+          >
+        </div>
+      </nav>
+
+      <!-- Right Content Main Display Workspace -->
+      <main id="main-doc" class="content-stream">
+        <!-- Section 1: Introduction -->
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+              JavaScript is a cross-platform, object-oriented scripting
+              language. It is a small and lightweight language. Inside a host
+              environment, JavaScript can be connected to the objects of its
+              environment to provide programmatic control over them.
+            </p>
+            <p>
+              JavaScript contains a standard library of objects, such as Array,
+              Date, and Math, and a core set of language elements such as
+              operators, control structures, and statements.
+            </p>
+          </article>
+        </section>
+
+        <!-- Section 2: Prerequisites -->
+        <section class="main-section" id="whats_already_known">
+          <header>What you should know</header>
+          <article>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+              <li>
+                A general understanding of the Internet and the World Wide Web
+                (WWW).
+              </li>
+              <li>
+                Good working knowledge of HyperText Markup Language (HTML).
+              </li>
+              <li>
+                Some programming experience. If you are new to programming, try
+                one of the tutorials on the main page about JavaScript.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Section 3: Comparative Analysis -->
+        <section class="main-section" id="javascript_and_java">
+          <header>JavaScript and Java</header>
+          <article>
+            <p>
+              JavaScript and Java are similar in some ways but fundamentally
+              different in some others. The JavaScript language resembles Java
+              but does not have Java's static typing and strong type checking.
+            </p>
+            <p>
+              In contrast to Java's compile-time system of classes built by
+              declarations, JavaScript supports a runtime system based on a
+              small number of data types representing numeric, Boolean, and
+              string values.
+            </p>
+          </article>
+        </section>
+
+        <!-- Section 4: Code Block Implementation -->
+        <section class="main-section" id="hello_world">
+          <header>Hello World</header>
+          <article>
+            <p>
+              To get started with writing JavaScript, open the Scratchpad and
+              write your first "Hello World" JavaScript code:
+            </p>
+            <div class="code-wrapper">
+              <code
+                >function greetMe(yourName) { alert("Hello " + yourName); }<br />greetMe("World");</code
+              >
             </div>
-        </nav>
+          </article>
+        </section>
 
-        <!-- Right Content Main Display Workspace -->
-        <main id="main-doc" class="content-stream">
-            
-            <!-- Section 1: Introduction -->
-            <section class="main-section" id="introduction">
-                <header>Introduction</header>
-                <article>
-                    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment, JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
-                    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
-                </article>
-            </section>
+        <!-- Section 5: Language Basics -->
+        <section class="main-section" id="variables">
+          <header>Variables</header>
+          <article>
+            <p>
+              You use variables as symbolic names for values in your
+              application. The names of variables, called identifiers, conform
+              to certain rules.
+            </p>
+            <p>
+              A JavaScript identifier must start with a letter, underscore (_),
+              or dollar sign ($); subsequent characters can also be digits
+              (0-9).
+            </p>
+          </article>
+        </section>
 
-
-
-            <!-- Section 2: Prerequisites -->
-            <section class="main-section" id="whats_already_known">
-                <header>What you should know</header>
-                <article>
-                    <p>This guide assumes you have the following basic background:</p>
-                    <ul>
-                        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-                        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                        <li>Some programming experience. If you are new to programming, try one of the tutorials on the main page about JavaScript.</li>
-                    </ul>
-                </article>
-            </section>
-
-
-
-             <!-- Section 3: Comparative Analysis -->
-            <section class="main-section" id="javascript_and_java">
-                <header>JavaScript and Java</header>
-                <article>
-                    <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking.</p>
-                    <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values.</p>
-                </article>
-            </section>
-
-
-
-
-             <!-- Section 4: Code Block Implementation -->
-            <section class="main-section" id="hello_world">
-                <header>Hello World</header>
-                <article>
-                    <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello World" JavaScript code:</p>
-                    <div class="code-wrapper">
-                        <code>function greetMe(yourName) { alert("Hello " + yourName); }<br>greetMe("World");</code>
-                    </div>
-                </article>
-            </section>
-
-
-
-            <!-- Section 5: Language Basics -->
-            <section class="main-section" id="variables">
-                <header>Variables</header>
-                <article>
-                    <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-                    <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9).</p>
-                </article>
-            </section>
-
-
-             <!-- Section 6: Scoping rules -->
-            <section class="main-section" id="declaring_variables">
-                <header>Declaring variables</header>
-                <article>
-                    <p>You can declare a variable in three distinct ways:</p>
-                    <p>Using the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.</p>
-                    <div class="code-wrapper">
-                        <code>let y = 13;<br>const z = "Immutable Block State";</code>
-                    </div>
-                </article>
-            </section>
-
-        </main>
+        <!-- Section 6: Scoping rules -->
+        <section class="main-section" id="declaring_variables">
+          <header>Declaring variables</header>
+          <article>
+            <p>You can declare a variable in three distinct ways:</p>
+            <p>
+              Using the keyword var. For example, <code>var x = 42.</code> This
+              syntax can be used to declare both local and global variables.
+            </p>
+            <div class="code-wrapper">
+              <code>let y = 13;<br />const z = "Immutable Block State";</code>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
 
     <!-- Script connectivity link -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
