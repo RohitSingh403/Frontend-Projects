@@ -4,3 +4,71 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Handles clean scrolling on bookmark link clicks */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Master Layout Framework splits layout into 2 parts */
+.doc-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ========================================== */
+/* LEFT SIDEBAR NAVIGATION PANEL              */
+/* ========================================== */
+.sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e5e7eb;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 24px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    padding: 14px 24px;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #f1f3f5;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #f1f3f5;
+    color: #111827;
+}
+
+/* Active Menu State Indicator */
+.nav-link.active {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    font-weight: 600;
+    border-left: 4px solid #4f46e5;
+    padding-left: 20px; /* Adjust padding offset for border size */
+}
+
+
