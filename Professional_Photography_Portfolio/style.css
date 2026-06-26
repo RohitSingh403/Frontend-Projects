@@ -18,3 +18,62 @@
   box-sizing: border-box;
 }
 
+
+
+html {
+    scroll-behavior: smooth; /* Forces fluid browser scrolling when hitting anchor buttons */
+    font-family: var(--font-stack);
+    color: var(--text-dark);
+    background-color: var(--bg-primary);
+}
+
+/* ========================================== */
+/* STICKY TOP BRANDING HEADER                 */
+/* ========================================== */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgba(17, 17, 17, 0.95); /* Semi-transparent ultra-dark slate */
+    backdrop-filter: blur(10px); /* Premium modern glass blur effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.studio-logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
