@@ -287,3 +287,78 @@ html {
 
 
 
+/* ========================================== */
+/* PHOTOGRAPHER CONTACT DETAILS FOOTER        */
+/* ========================================== */
+.main-footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 80px 50px 30px 50px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+}
+
+.footer-block {
+    flex: 1 1 350px;
+}
+
+.footer-block h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.studio-info p {
+    color: #999999;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    max-width: 400px;
+}
+
+.contact-details ul {
+    list-style: none;
+}
+
+.contact-details li {
+    color: #999999;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.contact-details li strong {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.footer-baseline {
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-baseline p {
+    color: #555555;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
