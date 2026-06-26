@@ -132,3 +132,28 @@ html {
 
 
 
+/* Interactive Anchor Button Styling */
+.cta-scroll-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 36px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 0; /* Clean hard-edged structural aesthetic */
+    transition: all 0.3s ease;
+}
+
+.cta-scroll-btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+
+
+
+
