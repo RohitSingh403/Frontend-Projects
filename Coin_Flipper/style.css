@@ -87,3 +87,18 @@ body {
 
 
 
+/* Premium Silver Gradient for Tails Face */
+.tails-face {
+    background: linear-gradient(135deg, #94a3b8, #475569);
+    color: #ffffff;
+    transform: rotateX(180deg); /* Pre-flips the back side upside down */
+}
+
+.coin-inner {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
