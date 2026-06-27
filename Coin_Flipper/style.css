@@ -102,3 +102,58 @@ body {
 
 
 
+/* ========================================== */
+/* INTERACTIVE BUTTON CONTROL INTERFACES     */
+/* ========================================== */
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.action-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.action-btn:active {
+    transform: translateY(1px);
+}
+
+.action-btn:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.secondary-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.secondary-btn:hover {
+    color: #0f172a;
+}
+
+
+
+
