@@ -157,3 +157,33 @@ body {
 
 
 
+/* ========================================== */
+/* STATISTICAL METRICS SCOREBOARD MATRIX      */
+/* ========================================== */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 25px;
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.score-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.score-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #334155;
+}
+
