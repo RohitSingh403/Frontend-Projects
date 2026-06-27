@@ -49,3 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
             flipBtn.disabled = false;
         }, 1200); // Matches the 1.2s animation transition duration set in CSS
     }
+
+
+    // 4. Write Scoreboard Reset Routine
+    function resetScoreboard() {
+        headsScore = 0;
+        tailsScore = 0;
+        totalFlips = 0;
+        
+        headsCountEl.innerText = '0';
+        tailsCountEl.innerText = '0';
+        
+        // Snap coin geometry orientation settings smoothly back to default baseline configurations
+        coin.style.transform = 'rotateX(0deg)';
+    }
+
+    // 5. Connect operational click layout pipelines
+    flipBtn.addEventListener('click', executeCoinFlip);
+    resetBtn.addEventListener('click', resetScoreboard);
+});
