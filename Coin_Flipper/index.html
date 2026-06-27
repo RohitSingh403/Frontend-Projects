@@ -1,58 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>3D Coin Flipper</title>
-</head>
-<body>
-     <!-- Main Game Board Enclosure Box -->
+  </head>
+  <body>
+    <!-- Main Game Board Enclosure Box -->
     <main class="game-container">
-        <header class="game-header">
-            <h1>Coin Flipper</h1>
-            <p>Test your luck with a 3D spin simulation</p>
-        </header>
+      <header class="game-header">
+        <h1>Coin Flipper</h1>
+        <p>Test your luck with a 3D spin simulation</p>
+      </header>
 
-        <!-- 3D Flipping Coin Structure Arena -->
-        <section class="coin-arena">
-            <div id="coin" class="coin-object">
-                <!-- Front Face of the Coin (Heads) -->
-                <div class="coin-side heads-face">
-                    <div class="coin-inner">H</div>
-                </div>
-                <!-- Back Face of the Coin (Tails) -->
-                <div class="coin-side tails-face">
-                    <div class="coin-inner">T</div>
-                </div>
-            </div>
-        </section>
+      <!-- 3D Flipping Coin Structure Arena -->
+      <section class="coin-arena">
+        <div id="coin" class="coin-object">
+          <!-- Front Face of the Coin (Heads) -->
+          <div class="coin-side heads-face">
+            <div class="coin-inner">H</div>
+          </div>
+          <!-- Back Face of the Coin (Tails) -->
+          <div class="coin-side tails-face">
+            <div class="coin-inner">T</div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Interactive Click Button Panel Zone -->
+      <section class="control-panel">
+        <button id="flip-btn" class="action-btn">Flip Coin</button>
+        <button id="reset-btn" class="secondary-btn">Reset Score</button>
+      </section>
 
-
-          <!-- Interactive Click Button Panel Zone -->
-        <section class="control-panel">
-            <button id="flip-btn" class="action-btn">Flip Coin</button>
-            <button id="reset-btn" class="secondary-btn">Reset Score</button>
-        </section>
-
-
-         <!-- Dynamic Score Tracking Matrices Container -->
-        <footer class="scoreboard">
-            <div class="score-card">
-                <span class="score-label">Heads</span>
-                <span id="heads-count" class="score-value">0</span>
-            </div>
-            <div class="score-card">
-                <span class="score-label">Tails</span>
-                <span id="tails-count" class="score-value">0</span>
-            </div>
-        </footer>
+      <!-- Dynamic Score Tracking Matrices Container -->
+      <footer class="scoreboard">
+        <div class="score-card">
+          <span class="score-label">Heads</span>
+          <span id="heads-count" class="score-value">0</span>
+        </div>
+        <div class="score-card">
+          <span class="score-label">Tails</span>
+          <span id="tails-count" class="score-value">0</span>
+        </div>
+      </footer>
     </main>
 
-
-
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
