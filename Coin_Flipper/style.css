@@ -42,3 +42,38 @@ body {
 
 
 
+
+/* ========================================== */
+/* 3D COIN GEOMETRY & FLIP ANIMATION MECHANICS */
+/* ========================================== */
+.coin-arena {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 40px auto;
+    perspective: 1000px; /* Grants 3D dimensional depth layout fields */
+}
+
+.coin-object {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Forces children to live in 3D grid space */
+    transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Snappy dynamic spin layout drop */
+}
+
+.coin-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden; /* Conceals reverse content text matrices when flipped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    border: 8px dashed rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2), 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
