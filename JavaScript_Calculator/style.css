@@ -97,3 +97,16 @@ body {
 
 
 
+/* High Visibility Mathematical Operator Configurations */
+.operator {
+    background-color: #f97316; /* Safety Orange brand accents */
+    color: #ffffff;
+}
+
+.operator:hover {
+    background-color: #ea580c;
+}
+
+
+
+
