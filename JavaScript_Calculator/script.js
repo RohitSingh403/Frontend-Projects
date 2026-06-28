@@ -104,4 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+    // 5. Connect Delegated Event Listeners across Keypad elements
+    keypad.addEventListener('click', (clickEvent) => {
+        // Verify click source maps to actual button objects accurately
+        const targetBtn = clickEvent.target.closest('.key-btn');
+        if (!targetBtn) return;
+
+        processInputPress(targetBtn);
+    });
+});
