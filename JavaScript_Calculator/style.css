@@ -110,3 +110,40 @@ body {
 
 
 
+
+
+/* Dangerous Reset Operations Colors Mapping Elements */
+.action-clear {
+    background-color: #ef4444; /* Alert Crimson Red base */
+    color: #ffffff;
+}
+
+.action-clear:hover {
+    background-color: #dc2626;
+}
+
+.action-delete {
+    background-color: #475569;
+    color: #cbd5e1;
+}
+
+/* Layout Grid Spanning Configurations Rules Matrix */
+.zero-key {
+    grid-column: span 2; /* Main 0 button spans two full column widths horizontally */
+}
+
+.action-equals {
+    background-color: #10b981; /* Success Emerald Green brand accents */
+    color: #ffffff;
+    grid-column: 4;
+    grid-row: span 2; /* Spans downward across two adjacent vertical rows safely */
+    height: 100%;
+}
+
+.action-equals:hover {
+    background-color: #059669;
+}
+
+
+
+
