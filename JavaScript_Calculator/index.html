@@ -19,6 +19,39 @@
         </header>
 
 
+ <!-- Dynamic 4-Column Operations Button Matrix Grid -->
+        <section class="keypad-matrix">
+            <!-- Row 1: Clear Operations Core Blocks -->
+            <button class="key-btn action-clear" data-action="clear">C</button>
+            <button class="key-btn action-delete" data-action="delete">&larr;</button>
+            <button class="key-btn operator" data-value="/">&divide;</button>
+            <button class="key-btn operator" data-value="*">&times;</button>
+
+            <!-- Row 2: Standard Numeric Units -->
+            <button class="key-btn number" data-value="7">7</button>
+            <button class="key-btn number" data-value="8">8</button>
+            <button class="key-btn number" data-value="9">9</button>
+            <button class="key-btn operator" data-value="-">&minus;</button>
+
+            <!-- Row 3: Standard Numeric Units -->
+            <button class="key-btn number" data-value="4">4</button>
+            <button class="key-btn number" data-value="5">5</button>
+            <button class="key-btn number" data-value="6">6</button>
+            <button class="key-btn operator" data-value="+">+</button>
+
+            <!-- Row 4: Standard Numeric Units -->
+            <button class="key-btn number" data-value="1">1</button>
+            <button class="key-btn number" data-value="2">2</button>
+            <button class="key-btn number" data-value="3">3</button>
+            
+            <!-- Equals key spans double height using grid parameters -->
+            <button class="key-btn action-equals" data-action="calculate">=</button>
+
+            <!-- Row 5: Baseline Operational Buttons -->
+            <button class="key-btn number zero-key" data-value="0">0</button>
+            <button class="key-btn decimal" data-value=".">.</button>
+        </section>
+
     <script src="script.js"></script>
 </body>
 </html>
