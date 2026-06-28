@@ -22,4 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        
+          // B. Handle incremental character string deletions step by step backtracks
+        if (actionValue === 'delete') {
+            if (currentInputString.length > 1) {
+                currentInputString = currentInputString.slice(0, -1);
+            } else {
+                currentInputString = '0';
+            }
+            displayScreen.innerText = currentInputString;
+            return;
+        }
