@@ -32,3 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
             displayScreen.innerText = currentInputString;
             return;
         }
+
+         // C. Evaluate computation processing commands execution pipeline
+        if (actionValue === 'calculate') {
+            executeTerminalMathCalculation();
+            return;
+        }
+
+        // D. Prevent duplicate formatting decimal structures inside character groups
+        if (buttonElement.classList.contains('decimal')) {
+            // Find active terminal string fragment block components array
+            const activeStringParts = currentInputString.split(/[\+\-\*\/]/);
+            const currentWorkingSegment = activeStringParts[activeStringParts.length - 1];
+            
+            if (currentWorkingSegment.includes('.')) {
+                return; // Exit loop to avoid entering invalid formatting arrays like "5.5.2"
+            }
+        }
+
+
+
+        
