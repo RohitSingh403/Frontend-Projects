@@ -57,3 +57,13 @@ body {
     color: #f8fafc;
     line-height: 1.1;
 }
+
+
+/* ========================================== */
+/* GRID LAYOUT FOR THE OPERATIONAL KEYPAD MATRIX*/
+/* ========================================== */
+.keypad-matrix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns equal widths */
+    gap: 12px;
+}
