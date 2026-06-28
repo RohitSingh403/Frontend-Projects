@@ -1,149 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Master Calculator Housing Alignment Card */
 .calculator-chassis {
-    background-color: #0f172a; /* Premium dark navy slate block */
-    width: 100%;
-    max-width: 360px;
-    padding: 24px;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  background-color: #0f172a; /* Premium dark navy slate block */
+  width: 100%;
+  max-width: 360px;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
 
 /* ========================================== */
 /* DISPLAY TERMINAL READOUT ZONE SCREEN       */
 /* ========================================== */
 .display-panel {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 16px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 110px;
-    overflow: hidden;
-    word-break: break-all;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 110px;
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .screen-history {
-    font-size: 0.95rem;
-    color: #64748b;
-    min-height: 20px;
-    margin-bottom: 4px;
-    letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  color: #64748b;
+  min-height: 20px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
 }
 
 .screen-readout {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #f8fafc;
-    line-height: 1.1;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #f8fafc;
+  line-height: 1.1;
 }
-
 
 /* ========================================== */
 /* GRID LAYOUT FOR THE OPERATIONAL KEYPAD MATRIX*/
 /* ========================================== */
 .keypad-matrix {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Columns equal widths */
-    gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns equal widths */
+  gap: 12px;
 }
-
-
-
-
 
 /* Base Interactive Button Layout Baseline Rules */
 .key-btn {
-    border: none;
-    background-color: #334155; /* Soft modern grey key base colors */
-    color: #f8fafc;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 18px 0;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.15s ease, transform 0.05s ease;
-    font-family: inherit;
+  border: none;
+  background-color: #334155; /* Soft modern grey key base colors */
+  color: #f8fafc;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 18px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.05s ease;
+  font-family: inherit;
 }
 
 .key-btn:hover {
-    background-color: #475569;
+  background-color: #475569;
 }
 
 .key-btn:active {
-    transform: scale(0.96); /* Provides physical button press confirmation visual pop */
+  transform: scale(
+    0.96
+  ); /* Provides physical button press confirmation visual pop */
 }
-
-
-
 
 /* High Visibility Mathematical Operator Configurations */
 .operator {
-    background-color: #f97316; /* Safety Orange brand accents */
-    color: #ffffff;
+  background-color: #f97316; /* Safety Orange brand accents */
+  color: #ffffff;
 }
 
 .operator:hover {
-    background-color: #ea580c;
+  background-color: #ea580c;
 }
-
-
-
-
-
 
 /* Dangerous Reset Operations Colors Mapping Elements */
 .action-clear {
-    background-color: #ef4444; /* Alert Crimson Red base */
-    color: #ffffff;
+  background-color: #ef4444; /* Alert Crimson Red base */
+  color: #ffffff;
 }
 
 .action-clear:hover {
-    background-color: #dc2626;
+  background-color: #dc2626;
 }
 
 .action-delete {
-    background-color: #475569;
-    color: #cbd5e1;
+  background-color: #475569;
+  color: #cbd5e1;
 }
 
 /* Layout Grid Spanning Configurations Rules Matrix */
 .zero-key {
-    grid-column: span 2; /* Main 0 button spans two full column widths horizontally */
+  grid-column: span 2; /* Main 0 button spans two full column widths horizontally */
 }
 
 .action-equals {
-    background-color: #10b981; /* Success Emerald Green brand accents */
-    color: #ffffff;
-    grid-column: 4;
-    grid-row: span 2; /* Spans downward across two adjacent vertical rows safely */
-    height: 100%;
+  background-color: #10b981; /* Success Emerald Green brand accents */
+  color: #ffffff;
+  grid-column: 4;
+  grid-row: span 2; /* Spans downward across two adjacent vertical rows safely */
+  height: 100%;
 }
 
 .action-equals:hover {
-    background-color: #059669;
+  background-color: #059669;
 }
-
-
-
-

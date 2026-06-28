@@ -1,58 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JavaScript Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Outer Calculator Wrapper Chassis -->
     <main class="calculator-chassis">
-        
-        <!-- Interactive Value Display Terminal Box -->
-        <header class="display-panel">
-            <!-- Displays previous calculation operations or state tracking strings -->
-            <div id="history-screen" class="screen-history"></div>
-            <!-- Main active numbers readout string block -->
-            <div id="display-screen" class="screen-readout">0</div>
-        </header>
+      <!-- Interactive Value Display Terminal Box -->
+      <header class="display-panel">
+        <!-- Displays previous calculation operations or state tracking strings -->
+        <div id="history-screen" class="screen-history"></div>
+        <!-- Main active numbers readout string block -->
+        <div id="display-screen" class="screen-readout">0</div>
+      </header>
 
+      <!-- Dynamic 4-Column Operations Button Matrix Grid -->
+      <section class="keypad-matrix">
+        <!-- Row 1: Clear Operations Core Blocks -->
+        <button class="key-btn action-clear" data-action="clear">C</button>
+        <button class="key-btn action-delete" data-action="delete">
+          &larr;
+        </button>
+        <button class="key-btn operator" data-value="/">&divide;</button>
+        <button class="key-btn operator" data-value="*">&times;</button>
 
- <!-- Dynamic 4-Column Operations Button Matrix Grid -->
-        <section class="keypad-matrix">
-            <!-- Row 1: Clear Operations Core Blocks -->
-            <button class="key-btn action-clear" data-action="clear">C</button>
-            <button class="key-btn action-delete" data-action="delete">&larr;</button>
-            <button class="key-btn operator" data-value="/">&divide;</button>
-            <button class="key-btn operator" data-value="*">&times;</button>
+        <!-- Row 2: Standard Numeric Units -->
+        <button class="key-btn number" data-value="7">7</button>
+        <button class="key-btn number" data-value="8">8</button>
+        <button class="key-btn number" data-value="9">9</button>
+        <button class="key-btn operator" data-value="-">&minus;</button>
 
-            <!-- Row 2: Standard Numeric Units -->
-            <button class="key-btn number" data-value="7">7</button>
-            <button class="key-btn number" data-value="8">8</button>
-            <button class="key-btn number" data-value="9">9</button>
-            <button class="key-btn operator" data-value="-">&minus;</button>
+        <!-- Row 3: Standard Numeric Units -->
+        <button class="key-btn number" data-value="4">4</button>
+        <button class="key-btn number" data-value="5">5</button>
+        <button class="key-btn number" data-value="6">6</button>
+        <button class="key-btn operator" data-value="+">+</button>
 
-            <!-- Row 3: Standard Numeric Units -->
-            <button class="key-btn number" data-value="4">4</button>
-            <button class="key-btn number" data-value="5">5</button>
-            <button class="key-btn number" data-value="6">6</button>
-            <button class="key-btn operator" data-value="+">+</button>
+        <!-- Row 4: Standard Numeric Units -->
+        <button class="key-btn number" data-value="1">1</button>
+        <button class="key-btn number" data-value="2">2</button>
+        <button class="key-btn number" data-value="3">3</button>
 
-            <!-- Row 4: Standard Numeric Units -->
-            <button class="key-btn number" data-value="1">1</button>
-            <button class="key-btn number" data-value="2">2</button>
-            <button class="key-btn number" data-value="3">3</button>
-            
-            <!-- Equals key spans double height using grid parameters -->
-            <button class="key-btn action-equals" data-action="calculate">=</button>
+        <!-- Equals key spans double height using grid parameters -->
+        <button class="key-btn action-equals" data-action="calculate">=</button>
 
-            <!-- Row 5: Baseline Operational Buttons -->
-            <button class="key-btn number zero-key" data-value="0">0</button>
-            <button class="key-btn decimal" data-value=".">.</button>
-        </section>
-        </main>
-<!-- Connect local interactivity script parameters with delay configurations -->
+        <!-- Row 5: Baseline Operational Buttons -->
+        <button class="key-btn number zero-key" data-value="0">0</button>
+        <button class="key-btn decimal" data-value=".">.</button>
+      </section>
+    </main>
+    <!-- Connect local interactivity script parameters with delay configurations -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
