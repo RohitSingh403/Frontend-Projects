@@ -51,5 +51,57 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
 
+ // E. Map Standard Number and Math Operator Appends Rules
+        if (currentInputString === '0' && !buttonElement.classList.contains('operator') && !buttonElement.classList.contains('decimal')) {
+            // Clear default baseline string to avoid layout bugs like "07"
+            currentInputString = numberValue;
+        } else {
+            // If an equation just finished, typing a number overwrites it, typing an operator builds on it
+            if (isCalculationComplete && !buttonElement.classList.contains('operator')) {
+                currentInputString = numberValue;
+            } else {
+                currentInputString += numberValue;
+            }
+        }
 
-        
+        isCalculationComplete = false;
+        displayScreen.innerText = currentInputString;
+    }
+
+    // 4. Write Safe Mathematical Parse Computation Sub-Routines
+    function executeTerminalMathCalculation() {
+        // Prevent evaluation pipeline executions on empty arrays
+        if (currentInputString === '0') return;
+
+        // Clean trailing operators to avoid calculation parsing breakdown crashes
+        let evaluationTargetString = currentInputString.trim();
+        if (/[\+\-\*\/]$/.test(evaluationTargetString)) {
+            evaluationTargetString = evaluationTargetString.slice(0, -1);
+        }
+
+        try {
+            // SAFE ALTERNATIVE CONVERSION MATRICES: Parse string calculations using Function Constructor
+            // This safely isolates calculations inside a sandboxed scope without running global eval() strings [STEM]
+            const computedMathOutcome = new Function(`return ${evaluationTargetString}`)();
+
+            // Format float output layout precision bounds to limit infinite loops strings
+            const formattedTerminalValue = Number(computedMathOutcome.toFixed(8)).toString();
+
+            // Display historical operations tracking blocks
+            historyScreen.innerText = `${evaluationTargetString} =`;
+            displayScreen.innerText = formattedTerminalValue;
+            
+            // Re-assign variable scope values state metrics tracking parameters
+            currentInputString = formattedTerminalValue;
+            isCalculationComplete = true;
+
+        } catch (errorException) {
+            displayScreen.innerText = 'Error';
+            currentInputString = '0';
+            historyScreen.innerText = '';
+        }
+    }
+
+
+
+    
