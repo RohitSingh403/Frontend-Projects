@@ -123,3 +123,42 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+     // 6. Action Event Listeners for Adding Elements
+    newFolderBtn.addEventListener('click', () => {
+        const folderName = prompt('Enter a name for the new folder:', 'Untitled Folder');
+        if (!folderName || folderName.trim() === '') return;
+
+        const newFolderObj = {
+            id: Date.now().toString(),
+            name: folderName.trim(),
+            type: 'folder',
+            parentId: currentFolderId
+        };
+
+        fileSystemData.push(newFolderObj);
+        renderDirectoryContents();
+    });
+
+    uploadFileBtn.addEventListener('click', () => {
+        hiddenFileInput.click(); // Triggers the hidden system explorer select window
+    });
+
+    hiddenFileInput.addEventListener('change', (e) => {
+        const fileTarget = e.target.files[0];
+        if (!fileTarget) return;
+
+        const newFileObj = {
+            id: Date.now().toString(),
+            name: fileTarget.name,
+            type: 'file',
+            parentId: currentFolderId
+        };
+
+        fileSystemData.push(newFileObj);
+        renderDirectoryContents();
+        hiddenFileInput.value = ''; // Wipe cache clean to let users upload twins
+    });
+
+
+    
