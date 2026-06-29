@@ -67,4 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
 
-            
+              // Connect specific target asset item removal logic
+            cardEl.querySelector('.delete-card-btn').addEventListener('click', () => {
+                fileSystemData = fileSystemData.filter(f => f.id !== item.id);
+                renderDirectoryContents();
+            });
+
+            fileGrid.appendChild(cardEl);
+        });
+    }
+
+
+    
