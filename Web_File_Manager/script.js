@@ -78,4 +78,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+      // 5. Breadcrumbs Path Update Routine Tracking Matrix Hierarchy
+    function updateBreadcrumbUI() {
+        breadcrumbTrail.innerHTML = '';
+        
+        // Always append baseline root pointer node
+        const rootCrumb = document.createElement('span');
+        rootCrumb.className = `crumb-link ${currentFolderId === 'root' ? '' : 'active'}`;
+        rootCrumb.innerText = 'Root';
+        rootCrumb.addEventListener('click', () => {
+            currentFolderId = 'root';
+            renderDirectoryContents();
+            updateBreadcrumbUI();
+        });
+        breadcrumbTrail.appendChild(rootCrumb);
+
+        // Trace paths upward if current node points below baseline root
+        if (currentFolderId !== 'root') {
+            let pathTraceArr = [];
+            let checkNode = fileSystemData.find(f => f.id === currentFolderId);
+
+            while (checkNode) {
+                pathTraceArr.unshift(checkNode); // Pushes target node layout forward onto start index
+                checkNode = fileSystemData.find(f => f.id === checkNode.parentId);
+            }
+
+            pathTraceArr.forEach(node => {
+                // Append standard divider string text element node
+                const separator = document.createElement('span');
+                separator.className = 'crumb-separator';
+                separator.innerText = ' / ';
+                breadcrumbTrail.appendChild(separator);
+
+                // Append the crumb link element node
+                const crumb = document.createElement('span');
+                crumb.className = 'crumb-link';
+                crumb.innerText = node.name;
+                crumb.addEventListener('click', () => {
+                    currentFolderId = node.id;
+                    renderDirectoryContents();
+                    updateBreadcrumbUI();
+                });
+                breadcrumbTrail.appendChild(crumb);
+            });
+        }
+    }
