@@ -22,4 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+     // 4. Core Render Loop: Draws Items filter matching the parent directory context
+    function renderDirectoryContents() {
+        // Clear old structural elements out
+        fileGrid.innerHTML = '';
+
+        // Filter out array targets that belong to the active directory context boundary
+        const activeItems = fileSystemData.filter(item => item.parentId === currentFolderId);
+
+        if (activeItems.length === 0) {
+            fileGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #94a3b8; padding-top: 40px;">This folder is completely empty.</p>`;
+            return;
+        }
+
+
+
+        
