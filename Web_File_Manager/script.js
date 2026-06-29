@@ -161,4 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
+      // 7. Initial Bootstrap Load Matrix Initialization Setup
+    renderDirectoryContents();
+    updateBreadcrumbUI();
+});
