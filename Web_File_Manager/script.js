@@ -37,4 +37,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        
+          // Iterate through items list array mapping visual element outputs
+        activeItems.forEach(item => {
+            const cardEl = document.createElement('div');
+            cardEl.className = 'grid-card';
+            cardEl.setAttribute('data-id', item.id);
+
+            // Assign structural icons based on categorical variations
+            const displayIcon = (item.type === 'folder') ? '📁' : '📄';
+
+            cardEl.innerHTML = `
+                <button class="delete-card-btn" title="Delete item">&times;</button>
+                <div class="item-graphic-icon">${displayIcon}</div>
+                <div class="item-title-label">${item.name}</div>
+            `;
+
+            // Setup Navigation behavior constraints inside click loops
+            cardEl.addEventListener('click', (e) => {
+                // Prevent trigger overlaps if users intend to hit delete
+                if (e.target.classList.contains('delete-card-btn')) return;
+
+                if (item.type === 'folder') {
+                    currentFolderId = item.id;
+                    renderDirectoryContents();
+                    updateBreadcrumbUI();
+                } else {
+                    alert(`Opening file: "${item.name}" (Preview Engine integration placeholder)`);
+                }
+            });
+
+
+            
