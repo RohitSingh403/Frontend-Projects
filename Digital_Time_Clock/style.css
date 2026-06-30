@@ -82,3 +82,43 @@ body {
 }
 
 
+/* ========================================== */
+/* COUNTDOWN CONFIGURATION INPUT ADJUSTERS   */
+/* ========================================== */
+.inputs-row-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.input-block label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.inputs-row-wrapper input[type="number"] {
+    background-color: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 70px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+
