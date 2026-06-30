@@ -44,3 +44,21 @@ body {
     text-align: center;
 }
 
+/* ========================================== */
+/* MONOSPACE ACCENTED READOUT DISPLAY ELEMENTS */
+/* ========================================== */
+.digital-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #38bdf8; /* Electric Cyan core neon readout accent */
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    line-height: 1;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+
+
