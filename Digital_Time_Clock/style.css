@@ -1,185 +1,185 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+  background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 /* Master Dashboard Housing Alignment Card Chassis */
 .clock-timer-chassis {
-    background-color: rgba(30, 41, 59, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(16px);
-    width: 100%;
-    max-width: 440px;
-    padding: 36px;
-    border-radius: 28px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  background-color: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
-
-
-
-
 
 /* Section Header Typography Guidelines */
 .panel-header {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #94a3b8;
-    margin-bottom: 16px;
-    text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 /* ========================================== */
 /* MONOSPACE ACCENTED READOUT DISPLAY ELEMENTS */
 /* ========================================== */
 .digital-display {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: #38bdf8; /* Electric Cyan core neon readout accent */
-    text-align: center;
-    letter-spacing: 1px;
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-    line-height: 1;
-    margin-bottom: 10px;
-    user-select: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #38bdf8; /* Electric Cyan core neon readout accent */
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  line-height: 1;
+  margin-bottom: 10px;
+  user-select: none;
 }
-
-
 
 /* Distinctive secondary tone configuration for timer state shifts */
 .secondary-color {
-    color: #34d399; /* Mint Green core neon countdown accent */
-    text-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
+  color: #34d399; /* Mint Green core neon countdown accent */
+  text-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
 }
 
 .date-subtitle {
-    color: #64748b;
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.5px;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .panel-divider {
-    border: none;
-    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  border: none;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
 }
-
 
 /* ========================================== */
 /* COUNTDOWN CONFIGURATION INPUT ADJUSTERS   */
 /* ========================================== */
 .inputs-row-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .input-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 .input-block label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #64748b;
-    text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
 }
 
 .inputs-row-wrapper input[type="number"] {
-    background-color: #0f172a;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #f8fafc;
-    font-size: 1.5rem;
-    font-weight: 600;
-    width: 70px;
-    padding: 8px;
-    text-align: center;
-    border-radius: 10px;
-    outline: none;
-    font-family: inherit;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 70px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
 }
-
 
 /* Remove default browser numeric step up/down arrow elements */
 .inputs-row-wrapper input::-webkit-outer-spin-button,
 .inputs-row-wrapper input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .input-separator {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #475569;
-    padding-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #475569;
+  padding-top: 20px;
 }
-
 
 /* ========================================== */
 /* CONTROL ACTION BUTTON LAYOUT PANEL        */
 /* ========================================== */
 .control-actions-row {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .action-btn {
-    flex: 1;
-    border: none;
-    padding: 14px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: inherit;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .play-btn {
-    background-color: #34d399;
-    color: #064e3b;
-    box-shadow: 0 4px 14px rgba(52, 211, 153, 0.2);
+  background-color: #34d399;
+  color: #064e3b;
+  box-shadow: 0 4px 14px rgba(52, 211, 153, 0.2);
 }
 
-.play-btn:hover { background-color: #10b981; }
-.pause-active { background-color: #fbbf24; color: #78350f; box-shadow: 0 4px 14px rgba(251, 191, 36, 0.2); }
-.pause-active:hover { background-color: #f59e0b; }
+.play-btn:hover {
+  background-color: #10b981;
+}
+.pause-active {
+  background-color: #fbbf24;
+  color: #78350f;
+  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.2);
+}
+.pause-active:hover {
+  background-color: #f59e0b;
+}
 
 .secondary-btn {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #cbd5e1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .secondary-btn:hover:not(:disabled) {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
 }
 
 .action-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-    box-shadow: none;
+  opacity: 0.3;
+  cursor: not-allowed;
+  box-shadow: none;
 }
