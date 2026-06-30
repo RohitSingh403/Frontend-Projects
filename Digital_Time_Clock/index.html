@@ -22,9 +22,29 @@
 
 
 
+  <!-- MODULE 2: Precision Interval Countdown Timer System -->
+        <section class="countdown-engine-panel">
+            <header class="panel-header">Countdown Timer</header>
+            
+            <!-- Terminal Timer Matrix Screen Configuration -->
+            <div id="timer-display" class="digital-display secondary-color">05:00</div>
+
+            <!-- Time Assignment Input Adjuster Interfaces -->
+            <div id="timer-inputs" class="inputs-row-wrapper">
+                <div class="input-block">
+                    <label for="minutes-input">Min</label>
+                    <input type="number" id="minutes-input" min="0" max="99" value="5" placeholder="00">
+                </div>
+                <div class="input-separator">:</div>
+                <div class="input-block">
+                    <label for="seconds-input">Sec</label>
+                    <input type="number" id="seconds-input" min="0" max="59" value="0" placeholder="00">
+                </div>
+            </div>
 
 
-        
+
+            
     <script src="script.js"></script>
 </body>
 </html>
