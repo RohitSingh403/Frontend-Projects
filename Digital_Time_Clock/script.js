@@ -41,3 +41,109 @@ document.addEventListener('DOMContentLoaded', () => {
         const textOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         liveDateEl.innerText = currentDateTimeInstance.toLocaleDateString('en-IN', textOptions);
     }
+
+     // Initialize clock refresh rendering stream cycles every single second
+    liveClockIntervalId = setInterval(refreshLiveClockTime, 1000);
+    refreshLiveClockTime(); // Kickstart instant render view cleanly to bypass loop delay
+
+    // ==========================================
+    // MODULE 2: COUNTDOWN TIMER ENGINE PIPELINES
+    // ==========================================
+    
+    // Auxiliary helper function to string format raw total seconds to modern "MM:SS" tokens [STEM]
+    function formatTimeTokenString(totalSecs) {
+        const mins = Math.floor(totalSecs / 60).toString().padStart(2, '0');
+        const secs = (totalSecs % 60).toString().padStart(2, '0');
+        return `${mins}:${secs}`;
+    }
+
+    function processTimerTick() {
+        if (totalSecondsRemaining <= 0) {
+            // Terminate interval operations directly once count hits zero boundary [STEM]
+            clearInterval(countdownIntervalId);
+            countdownIntervalId = null;
+            isTimerRunning = false;
+            
+            timerDisplayEl.innerText = "00:00";
+            timerDisplayEl.style.color = "#ef4444"; // Visual Alert flashing Crimson Red
+            startPauseBtn.innerText = "Start";
+            startPauseBtn.className = "action-btn play-btn";
+            startPauseBtn.disabled = true;
+            
+            alert("Time's up! Your countdown period has concluded.");
+            return;
+        }
+
+        totalSecondsRemaining--;
+        timerDisplayEl.innerText = formatTimeTokenString(totalSecondsRemaining);
+    }
+
+    function executeStartPauseAction() {
+        if (isTimerRunning) {
+            // ACTIVE RUNTIME -> PAUSE ACTION PIPELINE
+            clearInterval(countdownIntervalId);
+            countdownIntervalId = null;
+            isTimerRunning = false;
+            
+            startPauseBtn.innerText = "Resume";
+            startPauseBtn.className = "action-btn play-btn";
+        } else {
+            // PAUSED/IDLE -> ACTIVE RUNTIME ACTION PIPELINE
+            
+            // If starting fresh from idle state, extract and parse field input data parameters [STEM]
+            if (countdownIntervalId === null && totalSecondsRemaining === 0) {
+                const parsedMins = parseInt(minutesInput.value) || 0;
+                const parsedSecs = parseInt(secondsInput.value) || 0;
+                
+                totalSecondsRemaining = (parsedMins * 60) + parsedSecs; // Convert to total seconds [STEM]
+
+                // Prevent tracking process operations on completely empty entries
+                if (totalSecondsRemaining <= 0) return;
+            }
+
+            // Lock structural numeric configuration inputs during runtime operations
+            setInputsDisabledState(true);
+            resetTimerBtn.disabled = false;
+            
+            timerDisplayEl.style.color = ""; // Fallback default typography visual accent rules
+            isTimerRunning = true;
+            startPauseBtn.innerText = "Pause";
+            startPauseBtn.className = "action-btn pause-active";
+
+            // Initialize precision asynchronous interval pipeline loop [STEM]
+            countdownIntervalId = setInterval(processTimerTick, 1000);
+        }
+    }
+
+    function executeResetAction() {
+        // Halt processing timing intervals instantly
+        clearInterval(countdownIntervalId);
+        countdownIntervalId = null;
+        isTimerRunning = false;
+        totalSecondsRemaining = 0;
+
+        // Restore default interface baseline configurations rules
+        setInputsDisabledState(false);
+        resetTimerBtn.disabled = true;
+        startPauseBtn.disabled = false;
+        timerDisplayEl.style.color = "";
+        
+        startPauseBtn.innerText = "Start";
+        startPauseBtn.className = "action-btn play-btn";
+        
+        // Sync display text values to match whatever numerical settings sit inside inputs
+        const currentMinsSetting = parseInt(minutesInput.value) || 0;
+        const currentSecsSetting = parseInt(secondsInput.value) || 0;
+        const combinedSeconds = (currentMinsSetting * 60) + currentSecsSetting;
+        timerDisplayEl.innerText = formatTimeTokenString(combinedSeconds);
+    }
+
+    function setInputsDisabledState(disabledFlag) {
+        minutesInput.disabled = disabledFlag;
+        secondsInput.disabled = disabledFlag;
+        if (disabledFlag) {
+            timerInputsZone.style.opacity = "0.3";
+        } else {
+            timerInputsZone.style.opacity = "";
+        }
+    }
