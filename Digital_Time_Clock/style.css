@@ -122,3 +122,18 @@ body {
 }
 
 
+/* Remove default browser numeric step up/down arrow elements */
+.inputs-row-wrapper input::-webkit-outer-spin-button,
+.inputs-row-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-separator {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #475569;
+    padding-top: 20px;
+}
+
+
