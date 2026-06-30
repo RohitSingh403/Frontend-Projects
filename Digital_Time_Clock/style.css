@@ -137,3 +137,49 @@ body {
 }
 
 
+/* ========================================== */
+/* CONTROL ACTION BUTTON LAYOUT PANEL        */
+/* ========================================== */
+.control-actions-row {
+    display: flex;
+    gap: 16px;
+}
+
+.action-btn {
+    flex: 1;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.play-btn {
+    background-color: #34d399;
+    color: #064e3b;
+    box-shadow: 0 4px 14px rgba(52, 211, 153, 0.2);
+}
+
+.play-btn:hover { background-color: #10b981; }
+.pause-active { background-color: #fbbf24; color: #78350f; box-shadow: 0 4px 14px rgba(251, 191, 36, 0.2); }
+.pause-active:hover { background-color: #f59e0b; }
+
+.secondary-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.secondary-btn:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+}
+
+.action-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    box-shadow: none;
+}
