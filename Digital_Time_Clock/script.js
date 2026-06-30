@@ -147,3 +147,28 @@ document.addEventListener('DOMContentLoaded', () => {
             timerInputsZone.style.opacity = "";
         }
     }
+// Sync screen displays dynamically in real-time as users modify input parameters
+    function handleLiveInputChange() {
+        // Enforce basic numerical range bounds parsing safeguards
+        let m = parseInt(minutesInput.value) || 0;
+        let s = parseInt(secondsInput.value) || 0;
+        
+        if (s > 59) { s = 59; secondsInput.value = 59; }
+        if (m > 99) { m = 99; minutesInput.value = 99; }
+        if (m < 0) { m = 0; minutesInput.value = 0; }
+        if (s < 0) { s = 0; secondsInput.value = 0; }
+
+        if (!isTimerRunning && countdownIntervalId === null) {
+            timerDisplayEl.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+    }
+
+    // 3. Connect delegated event layout listeners across interface interactive components
+    startPauseBtn.addEventListener('click', executeStartPauseAction);
+    resetTimerBtn.addEventListener('click', executeResetAction);
+    minutesInput.addEventListener('input', handleLiveInputChange);
+    secondsInput.addEventListener('input', handleLiveInputChange);
+});
+
+
+
