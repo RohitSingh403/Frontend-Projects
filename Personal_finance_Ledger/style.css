@@ -4,3 +4,56 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f1f5f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Master Dashboard Housing Alignment Card Chassis */
+.ledger-chassis {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ledger-header h1 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.ledger-header p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Clean title section dividers */
+h3 {
+    font-size: 1.1rem;
+    color: #334155;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-underline {
+    width: 40px;
+    height: 3px;
+    background-color: #cbd5e1;
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+
+
