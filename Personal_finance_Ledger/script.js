@@ -24,4 +24,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    // 4. Core Render Ledger Loop: Recalculates balance values summary and draws lists
+    function renderLedgerDashboard() {
+        // Clear past operational nodes
+        transactionListEl.innerHTML = '';
+
+        let incomeAccumulator = 0;
+        let expenseAccumulator = 0;
+
+        if (transactionsDataArr.length === 0) {
+            transactionListEl.innerHTML = `<p style="text-align: center; color: #94a3b8; font-size: 0.9rem; padding-top: 20px;">No transaction records logged yet.</p>`;
+        }
+
+        // Iterate through items data array tracking math conditions
+        transactionsDataArr.forEach(transaction => {
+            const amountVal = parseFloat(transaction.amount);
+            
+            // Allocate numbers to their matching financial buckets
+            if (amountVal > 0) {
+                incomeAccumulator += amountVal;
+            } else {
+                expenseAccumulator += amountVal;
+            }
+
+            // Create horizontal item structural cards list nodes
+            const listItemEl = document.createElement('li');
+            const flowClass = amountVal > 0 ? 'plus-border' : 'minus-border';
+            listItemEl.className = `log-item ${flowClass}`;
+
+            const signMarker = amountVal > 0 ? '+' : '';
+            
+            listItemEl.innerHTML = `
+                <span class="item-desc">${transaction.description}</span>
+                <span class="item-amt">${signMarker}${formatCurrency(amountVal)}</span>
+                <button class="delete-item-btn" data-id="${transaction.id}" title="Delete transaction">&times;</button>
+            `;
+
+            // Connect sub-component transactional row removal click loops
+            listItemEl.querySelector('.delete-item-btn').addEventListener('click', () => {
+                removeTransactionItem(transaction.id);
+            });
+
+            transactionListEl.appendChild(listItemEl);
+        });
+
+        // Compute terminal net balances account summary fields
+        const netTotalBalance = incomeAccumulator + expenseAccumulator;
+
+        // Render string values out directly onto screen layout wrappers
+        totalBalanceEl.innerText = formatCurrency(netTotalBalance);
+        totalIncomeEl.innerText = `+ ${formatCurrency(incomeAccumulator)}`;
+        totalExpenseEl.innerText = `- ${formatCurrency(Math.abs(expenseAccumulator))}`;
+
+        // Keep absolute values balanced inside local storage blocks
+        localStorage.setItem(storageKey, JSON.stringify(transactionsDataArr));
+    }
+
+
+
+
+
     
