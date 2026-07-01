@@ -57,3 +57,60 @@ h3 {
 }
 
 
+/* ========================================== */
+/* ACCOUNT BALANCE SUMMARY SHIELD ELEMENTS    */
+/* ========================================== */
+.balance-summary-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-balance-card {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.card-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.balance-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.split-flow-row {
+    display: flex;
+    gap: 16px;
+}
+
+.flow-card {
+    flex: 1;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.flow-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.income-accent .flow-value { color: #10b981; }
+.expense-accent .flow-value { color: #ef4444; }
+
+
+
