@@ -1,71 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Personal Finance Ledger</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Main Outer Dashboard Wrapper Card Chassis -->
     <main class="ledger-chassis">
-        <header class="ledger-header">
-            <h1>Expense Tracker</h1>
-            <p>Monitor your cash flows and balance</p>
-        </header>
+      <header class="ledger-header">
+        <h1>Expense Tracker</h1>
+        <p>Monitor your cash flows and balance</p>
+      </header>
 
+      <!-- MODULE 1: Live Account Balance Summary Cards Matrix -->
+      <section class="balance-summary-panel">
+        <div class="main-balance-card">
+          <span class="card-label">Your Balance</span>
+          <h2 id="total-balance" class="balance-value">₹0.00</h2>
+        </div>
+        <div class="split-flow-row">
+          <div class="flow-card income-accent">
+            <span class="card-label">Income</span>
+            <span id="total-income" class="flow-value">+ ₹0.00</span>
+          </div>
+          <div class="flow-card expense-accent">
+            <span class="card-label">Expenses</span>
+            <span id="total-expense" class="flow-value">- ₹0.00</span>
+          </div>
+        </div>
+      </section>
 
-        <!-- MODULE 1: Live Account Balance Summary Cards Matrix -->
-        <section class="balance-summary-panel">
-            <div class="main-balance-card">
-                <span class="card-label">Your Balance</span>
-                <h2 id="total-balance" class="balance-value">₹0.00</h2>
+      <!-- MODULE 2: Transaction History Log Stream -->
+      <section class="history-panel">
+        <h3>Transaction History</h3>
+        <div class="section-underline"></div>
+        <ul id="transaction-list" class="log-stream-list">
+          <!-- Items injected dynamically via JavaScript will land here -->
+        </ul>
+      </section>
+
+      <!-- MODULE 3: Financial Entry Assignment Input Form -->
+      <section class="form-panel">
+        <h3>Add New Transaction</h3>
+        <div class="section-underline"></div>
+
+        <form id="ledgerForm" class="entry-form">
+          <div class="form-group">
+            <label for="entryText">Description</label>
+            <input
+              type="text"
+              id="entryText"
+              required
+              placeholder="Salary, Groceries, Rent..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="entryAmount">Amount</label>
+            <div class="input-subtitle">
+              Use negative values for expenses (e.g., -500) and positive for
+              income (e.g., 2000).
             </div>
-            <div class="split-flow-row">
-                <div class="flow-card income-accent">
-                    <span class="card-label">Income</span>
-                    <span id="total-income" class="flow-value">+ ₹0.00</span>
-                </div>
-                <div class="flow-card expense-accent">
-                    <span class="card-label">Expenses</span>
-                    <span id="total-expense" class="flow-value">- ₹0.00</span>
-                </div>
-            </div>
-        </section>
-
-         <!-- MODULE 2: Transaction History Log Stream -->
-        <section class="history-panel">
-            <h3>Transaction History</h3>
-            <div class="section-underline"></div>
-            <ul id="transaction-list" class="log-stream-list">
-                <!-- Items injected dynamically via JavaScript will land here -->
-            </ul>
-        </section>
-
-
-         <!-- MODULE 3: Financial Entry Assignment Input Form -->
-        <section class="form-panel">
-            <h3>Add New Transaction</h3>
-            <div class="section-underline"></div>
-            
-            <form id="ledgerForm" class="entry-form">
-                <div class="form-group">
-                    <label for="entryText">Description</label>
-                    <input type="text" id="entryText" required placeholder="Salary, Groceries, Rent...">
-                </div>
-                <div class="form-group">
-                    <label for="entryAmount">Amount</label>
-                    <div class="input-subtitle">Use negative values for expenses (e.g., -500) and positive for income (e.g., 2000).</div>
-                    <input type="number" id="entryAmount" step="0.01" required placeholder="Enter amount">
-                </div>
-                <button type="submit" class="submit-btn">Add Transaction</button>
-            </form>
-        </section>
+            <input
+              type="number"
+              id="entryAmount"
+              step="0.01"
+              required
+              placeholder="Enter amount"
+            />
+          </div>
+          <button type="submit" class="submit-btn">Add Transaction</button>
+        </form>
+      </section>
     </main>
 
-
-     <!-- Connect local interactivity script parameters with delay configurations -->
+    <!-- Connect local interactivity script parameters with delay configurations -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>

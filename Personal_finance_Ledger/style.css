@@ -1,246 +1,250 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f1f5f9;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #1e293b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+  background-color: #f1f5f9;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 /* Master Dashboard Housing Alignment Card Chassis */
 .ledger-chassis {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 450px;
-    padding: 32px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .ledger-header h1 {
-    font-size: 1.8rem;
-    color: #0f172a;
-    margin-bottom: 4px;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 4px;
 }
 
 .ledger-header p {
-    color: #64748b;
-    font-size: 0.9rem;
+  color: #64748b;
+  font-size: 0.9rem;
 }
 
 /* Clean title section dividers */
 h3 {
-    font-size: 1.1rem;
-    color: #334155;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .section-underline {
-    width: 40px;
-    height: 3px;
-    background-color: #cbd5e1;
-    margin-bottom: 16px;
-    border-radius: 2px;
+  width: 40px;
+  height: 3px;
+  background-color: #cbd5e1;
+  margin-bottom: 16px;
+  border-radius: 2px;
 }
-
 
 /* ========================================== */
 /* ACCOUNT BALANCE SUMMARY SHIELD ELEMENTS    */
 /* ========================================== */
 .balance-summary-panel {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .main-balance-card {
-    background-color: #0f172a;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 14px;
-    text-align: center;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
 }
 
 .card-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #94a3b8;
-    display: block;
-    margin-bottom: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .balance-value {
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .split-flow-row {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .flow-card {
-    flex: 1;
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 16px;
-    border-radius: 12px;
-    text-align: center;
+  flex: 1;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .flow-value {
-    font-size: 1.25rem;
-    font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
-.income-accent .flow-value { color: #10b981; }
-.expense-accent .flow-value { color: #ef4444; }
-
-
+.income-accent .flow-value {
+  color: #10b981;
+}
+.expense-accent .flow-value {
+  color: #ef4444;
+}
 
 /* ========================================== */
 /* TRANSACTION HISTORY LOG LIST REVIEWS       */
 /* ========================================== */
 .log-stream-list {
-    list-style: none;
-    max-height: 220px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-right: 4px;
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 4px;
 }
 
 /* Custom layout item tracking rows cards */
 .log-item {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 12px 16px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    transition: all 0.2s ease;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
 /* Color indicator code bars inside margins */
-.log-item.plus-border { border-right: 5px solid #10b981; }
-.log-item.minus-border { border-right: 5px solid #ef4444; }
+.log-item.plus-border {
+  border-right: 5px solid #10b981;
+}
+.log-item.minus-border {
+  border-right: 5px solid #ef4444;
+}
 
 .item-desc {
-    font-weight: 500;
-    color: #334155;
-    font-size: 0.95rem;
+  font-weight: 500;
+  color: #334155;
+  font-size: 0.95rem;
 }
 
 .item-amt {
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-right: 20px; /* Shifts spacing to reveal target close button overlay */
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-right: 20px; /* Shifts spacing to reveal target close button overlay */
 }
 
 /* Inline Floating Row Deletion Trigger Button */
 .delete-item-btn {
-    position: absolute;
-    right: 12px;
-    background: none;
-    border: none;
-    color: #94a3b8;
-    font-size: 1.2rem;
-    cursor: pointer;
-    line-height: 1;
-    opacity: 0;
-    transition: all 0.2s ease;
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 
 .log-item:hover {
-    transform: translateX(-2px);
-    background-color: #f1f5f9;
+  transform: translateX(-2px);
+  background-color: #f1f5f9;
 }
 
 .log-item:hover .delete-item-btn {
-    opacity: 1;
+  opacity: 1;
 }
 
 .delete-item-btn:hover {
-    color: #ef4444;
+  color: #ef4444;
 }
-
 
 /* ========================================== */
 /* INPUT FORMS AND SELECTION CONFIGURATIONS   */
 /* ========================================== */
 .entry-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .form-group label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #475569;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
 }
 
 .input-subtitle {
-    font-size: 0.75rem;
-    color: #94a3b8;
-    line-height: 1.3;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  line-height: 1.3;
 }
 
 .entry-form input[type="text"],
 .entry-form input[type="number"] {
-    padding: 10px 14px;
-    font-size: 0.95rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    outline: none;
-    background-color: #ffffff;
-    font-family: inherit;
-    transition: border-color 0.2s ease;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
 }
 
 .entry-form input:focus {
-    border-color: #0f172a;
+  border-color: #0f172a;
 }
 
 .submit-btn {
-    background-color: #0f172a;
-    color: #ffffff;
-    border: none;
-    padding: 12px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 4px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 4px;
 }
 
 .submit-btn:hover {
-    background-color: #1e293b;
+  background-color: #1e293b;
 }
-
