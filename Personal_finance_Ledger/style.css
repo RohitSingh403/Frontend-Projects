@@ -114,3 +114,73 @@ h3 {
 
 
 
+/* ========================================== */
+/* TRANSACTION HISTORY LOG LIST REVIEWS       */
+/* ========================================== */
+.log-stream-list {
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 4px;
+}
+
+/* Custom layout item tracking rows cards */
+.log-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Color indicator code bars inside margins */
+.log-item.plus-border { border-right: 5px solid #10b981; }
+.log-item.minus-border { border-right: 5px solid #ef4444; }
+
+.item-desc {
+    font-weight: 500;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+.item-amt {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 20px; /* Shifts spacing to reveal target close button overlay */
+}
+
+/* Inline Floating Row Deletion Trigger Button */
+.delete-item-btn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.log-item:hover {
+    transform: translateX(-2px);
+    background-color: #f1f5f9;
+}
+
+.log-item:hover .delete-item-btn {
+    opacity: 1;
+}
+
+.delete-item-btn:hover {
+    color: #ef4444;
+}
+
+
