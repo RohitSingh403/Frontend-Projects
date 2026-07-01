@@ -114,3 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
         entryAmount.value = '';
     });
 
+    // 6. Delete Target Asset Row Items Routine
+    function removeTransactionItem(targetId) {
+        transactionsDataArr = transactionsDataArr.filter(item => item.id !== targetId);
+        renderLedgerDashboard();
+    }
+
+    // 7. Initial Bootstrap Load Matrix Initialization Setup
+    renderLedgerDashboard();
+});
+
