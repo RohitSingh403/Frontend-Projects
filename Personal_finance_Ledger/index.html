@@ -44,6 +44,24 @@
         </section>
 
 
-        
+         <!-- MODULE 3: Financial Entry Assignment Input Form -->
+        <section class="form-panel">
+            <h3>Add New Transaction</h3>
+            <div class="section-underline"></div>
+            
+            <form id="ledgerForm" class="entry-form">
+                <div class="form-group">
+                    <label for="entryText">Description</label>
+                    <input type="text" id="entryText" required placeholder="Salary, Groceries, Rent...">
+                </div>
+                <div class="form-group">
+                    <label for="entryAmount">Amount</label>
+                    <div class="input-subtitle">Use negative values for expenses (e.g., -500) and positive for income (e.g., 2000).</div>
+                    <input type="number" id="entryAmount" step="0.01" required placeholder="Enter amount">
+                </div>
+                <button type="submit" class="submit-btn">Add Transaction</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
