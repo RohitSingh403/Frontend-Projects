@@ -84,4 +84,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+
+    // 5. Append New Transaction Records Event Handlers
+    ledgerForm.addEventListener('submit', (submitEvent) => {
+        submitEvent.preventDefault();
+
+        const descriptionString = entryText.value.trim();
+        const numericAmount = parseFloat(entryAmount.value);
+
+        // Prevent process operations from processing blank zeroes
+        if (numericAmount === 0) {
+            alert("Transaction amounts cannot be exactly zero.");
+            return;
+        }
+
+        // Build data structure item payload
+        const transactionPayload = {
+            id: Date.now().toString(), // Generates instant unique tracking tags
+            description: descriptionString,
+            amount: numericAmount
+        };
+
+        // Inject ledger object item directly into master monitoring streams
+        transactionsDataArr.push(transactionPayload);
+        renderLedgerDashboard();
+
+        // Wipe data input form elements clean back to default baseline states
+        entryText.value = '';
+        entryAmount.value = '';
+    });
+
